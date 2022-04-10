@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Heading -->
+    <h1>HTML demo</h1>
+
+    <!-- Formatting section -->
+    <section>
+      <b>bold</b>
+      <em>emphasis</em>
+      <i>alternate</i>
+      <strong>important</strong>
+      <sub>subscripted</sub>
+      <sup>superscripted</sup>
+    </section>
+
+    <!-- Break to the next line -->
+    <br />
+    <br />
+    <!-- Horizontal line -->
+    <hr />
+    <br />
+    <br />
+
+    <!-- Forms and inputs section -->
+    <section>
+      <form>
+        <div>
+          <h4>Input Elements</h4>
+          <div>
+            <label>Text</label>
+            <input name="text" type="text" placeholder="enter text here" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input name="email" type="email" />
+          </div>
+          <div>
+            <label>Number</label>
+            <input name="number" type="number" max="10" min="1" />
+          </div>
+          <div>
+            <label>Date</label>
+            <input name="date" type="date" />
+          </div>
+        </div>
+        <div>
+          <h4>Select Elements</h4>
+          <div>
+            <label>Radio</label>
+            <input name="radio" type="radio" value="yes" /> yes
+            <input name="radio" type="radio" value="no" />Whatever
+          </div>
+          <div>
+            <label>Checkbox</label>
+            <input name="checkbox" type="checkbox" value="yes" /> yes
+            <input name="checkbox" type="checkbox" value="no" />no
+          </div>
+          <div>
+            <label>Select</label>
+            <select name="select[]" multiple>
+              <option value="selection_1">selection 1</option>
+              <option value="selection_2">selection 2</option>
+              <option value="selection_3">selection 3</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <h4>Long Input Element</h4>
+          <textarea name="textarea" col="5" rows="6">
+If you really need to input super long text.</textarea
+          >
+        </div>
+        <div>
+          <h4>Action Element</h4>
+          <button type="submit">Save</button>
+          <button type="button">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+    <!-- Media section -->
+    <section>
+      <!-- Image example -->
+      <img
+        src="https://docs.htmlcsstoimage.com/assets/images/dog.jpg"
+        width="100px"
+      />
+
+      <!-- Button with link -->
+      <button
+        style="
+          border: 2px solid black;
+          padding: 10px 20px;
+          background-color: rgb(40, 124, 158);
+          font-size: 24px;
+          display: block;
+          margin-top: 20px;
+          border-radius: 1rem;
+        "
+      >
+        <a
+          href="https://www.fbdemo.com/audio/index.html"
+          target="_blank"
+          style="text-decoration: none; color: black"
+          >Click for audio demo</a
+        >
+      </button>
+
+      <!-- Link as a button -->
+      <a
+        href="https://www.fbdemo.com/audio/index.html"
+        target="_blank"
+        style="
+          border: 2px solid black;
+          padding: 10px 20px;
+          background-color: rgb(40, 124, 158);
+          font-size: 24px;
+          display: block;
+          margin-top: 20px;
+          border-radius: 1rem;
+          text-decoration: none;
+          color: black;
+          width: fit-content;
+        "
+        >Click for audio demo</a
+      >
+
+      <br />
+      <br />
+      <!-- Video tag -->
+      <video
+        id="video"
+        controls="controls"
+        preload="none"
+        width="600"
+        poster="https://assets.codepen.io/32795/poster.png"
+      >
+        <source
+          id="mp4"
+          src="http://media.w3.org/2010/05/sintel/trailer.mp4"
+          type="video/mp4"
+        />
+        <source
+          id="webm"
+          src="http://media.w3.org/2010/05/sintel/trailer.webm"
+          type="video/webm"
+        />
+        <source
+          id="ogv"
+          src="http://media.w3.org/2010/05/sintel/trailer.ogv"
+          type="video/ogg"
+        />
+      </video>
+    </section>
+
+    <!-- Lists section -->
+    <section>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ol>
+    </section>
+  </body>
+</html>
