@@ -1,3 +1,3 @@
 # Frontend_7k_1gr
 
-TEST ALVIS
+2. lekcijas mājas darbs 11.04.2022
