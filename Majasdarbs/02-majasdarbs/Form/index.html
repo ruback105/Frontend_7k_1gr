@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Homewrok</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="h2-form">Registration form</h2><br>
+        <form action="">
+            <fieldset>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </fieldset>  
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>Information</legend>
+                <h4>Gender</h4>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label><br><br>
+                <label for="birthday">Date of birth:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <h4>Adress</h4>
+                <label for="city">Pick a city:</label>
+                <input type="list" list="cities" name="city" id="city" placeholder="Choose a city">
+                <datalist id="cities">
+                    <option value="Riga">
+                    <option value="Jelgava">
+                    <option value="Liepaja">
+                </datalist>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>Hobbies</legend>
+                <p>Multiple answers possible</p>
+                <input type="checkbox" id="option1" name="option1">
+                <label for="option1">Sports</label><br>
+                <input type="checkbox" id="option2" name="option2">
+                <label for="option2">Music</label><br>
+                <input type="checkbox" id="option3" name="option3">
+                <label for="option3">Art</label><br>
+                <input type="checkbox" id="option4" name="option4">
+                <label for="option4">Travelling</label><br>
+                <input type="checkbox" id="option5" name="option5">
+                <label for="option5">Other:</label>
+                <input type="text"><br>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>Extra information</legend>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+000-12345678"><br><br>
+                <label for="colors">Pick your favorite color:</label>
+                <input type="color" name="colors" id="colors"><br>
+            </fieldset>
+        </form>
+        <br>
+        <button class="btn-submit" type="submit">Submit</button>
+    </div>
+</body>
+</html>
