@@ -8,38 +8,29 @@ h2 {text-align: center;}
     <body>
 <!--form-->
 <hr>
+
 <h2 style="background-color:DodgerBlue;">Reģistrācijas forma</h2> 
 <form action method="get">
     <hr>
-        <h3>Par Jums</h3>
-        <label for="name">Vārds:</label>
-        <input type="text" name="name" id="name" required
-
-        <label for="name">Uzvārds:</label>
-        <input type="text" name="name" id="name" required
-    </fieldset>
-     <hr>
-<fieldset>
-    <legend>Informācija par Jums</legend>
-        <label for="story"></label>
-        <p>Jūsu dzimums:</p>
-
-        <div>
+    <fieldset>
+      <legend><h3 style="width 5%;background-color:yellow;">Informācija par Jums</h3> </legend>
+  <label for="fname">Vārds:</label>
+  <input type="text" id="fname" name="fname">
+  <label for="pasword">Parole:</label>
+  <input type="text" id="pasword" name="pasword"><br><br>
+  <p>Jūsu dzimums:</p>
           <input type="radio" id="vīrietis" name="dzimums" value="vīrietis"
                  checked>
           <label for="vīrietis">vīrietis</label>
-        </div>
-        <div>
-            <input type="radio" id="sieviete" name="dzimums" value="sieviete">
+        
+            <input type="radio" id="sieviete" name="dzimums" value="sieviete"
             <label for="sieviete">sieviete</label>
-          </div>
-          <br>
-          <label for="Dzimšanas datums">Dzimšanas datums:</label>
+  <br> <br>
+    <label for="Dzimšanas datums">Dzimšanas datums:</label>
           <input type="date" id="Dzimšanas datums" name="Dzimšanas datums">
-          <br>
 
-          <br>
-            <legend></legend>
+          <br><br>
+          
             <label for="Dzīvesvieta">Dzīvesvieta:</label>
             <input list="vietas" id="Dzīvesvieta" name="Dzīvesvietas">
             <datalist id="vietas">
@@ -51,10 +42,11 @@ h2 {text-align: center;}
             <option value="Rēzekne">
             <option value="Cits">
             </datalist>
-        </fieldset>
+          </fieldset>
+    
+        
 <hr>
-
-<h3>Jūsu hobiji</h3>
+<fieldset><legend><h3 style="background-color:yellow;">Jūsu hobiji</h3></legend> 
 
 <form action="/action_page.php">
   <input type="checkbox" id="hobijs1" name="hobijs1" value="Māksla">
@@ -64,13 +56,16 @@ h2 {text-align: center;}
   <input type="checkbox" id="hobijs3" name="hobijs3" value="Lokšaušana">
   <label for="hobijs3"> Lokšaušana</label><br><br>
 </form>
+</fieldset>
+
 <hr>
 
-<fieldset>
-        <legend>Komentāriem</legend>
+<fieldset><legend><h3 style="background-color:yellow;">Komentāriem</h3></legend> 
         <label for="story">Par mani:</label>
         <textarea id="story" name="story" rows="5" cols="33"></textarea>
       </fieldset>
+       
+      
 <hr>
 
 <button type="Pabeigt">Pabeigt</button>
