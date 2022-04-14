@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 80%;
+    border: 2px solid gray;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.nav-bar {
+    top: 0;
+    position: fixed;
+    display: flex;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+.nav-bar a:hover {
+    background-color: black;
+}
+
+section {
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+section h3, em, p, details{
+    padding-left: 15px;
+}
+
+h2 {
+    padding-bottom: 25px;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+#contact-me a {
+    padding-left: 25px;
+}
