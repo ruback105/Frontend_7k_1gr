@@ -5,25 +5,178 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="UTF-8" />
+    <style>
+        section{
+            padding: 50px;
+            min-width: 20vh;
+        }
+    </style>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="">MenuItem1</a></li>
-        </ul>
+          <ul>
+              <li><a href="#work-experience">Work experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#languages">Languages</a></li>
+              <li><a href="#contactme">Contact me</a></li>
+          </ul>
       </nav>
-    </header>
+  </header>
+  <body>
+   <main>
+        <!-- ABOUT ME -->
+        <section id="aboutme">
+            <img src="./redig_prof.jpg" alt="profileImg" width="100px" height="100px">
+            <address>
+                <h1>Edmunds Platačs</h1>
+                <a href="#">edmunds.platacs@xxx.xx</a><br>
+                <a href="#contactme">contact me</a>
+            </address>
+        </section>
+        <!-- /ABOUT ME -->
 
-    <main>
-      <!-- ABOUT ME -->
-      <section id="aboutme">
-        <img src="" alt="" width="100px" height="100px" />
-        <address>
-          <h1>Contact info:</h1>
-        </address>
-      </section>
-      <hr />
+        <hr>
+        <!-- WORK EXPERIENCE -->
+        <section id="work-experience">
+            <h2>Work experience</h2>
+
+            <h3>Pullman Riga Old Town Hotel / Building Manager</h3>
+            <em>August 2018 - Present</em>
+
+            <ul>
+                <li>organization and performance of repair and construction works</li>
+                <li>ventilation equipment service -heating system service</li>
+                <li>cooperation with suppliers and equipment services</li>
+                <li>other duties related to real estate management and management of the company</li>
+            </ul>
+
+            <h3>SIA Bendit / Manufacturing / Production</h3>
+            <em>Mart 2017 - July 2018 </em>
+
+            <ul>
+                <li>Manufacturing Production of various carpentry products.</li>
+                <li>Bar counters</li>
+                <li>Bookshelves, cabinets</li>
+                <li>Ladder railings</li>
+                <li>Various non-standard furniture for hotels</li>
+                <li>Summer terraces for restaurants</li>
+            </ul>
+
+            <h3>SIA Proactio /  Building Administrative Specialist</h3>
+            <em>August 2013 - Mart 2017</em>
+
+            <ul>
+                <li>organization and performance of repair and construction works</li>
+                <li>ventilation equipment service -heating system service</li>
+                <li>cooperation with suppliers and equipment services</li>
+                <li>other duties related to real estate management and management of the company</li>
+            </ul>
+
+            <h3>SIA"Korte.LV" / Synthetic stone processing master</h3>
+            <em>May 2006 - Mart 2013</em>
+
+            <ul>
+                <li>synthetic stone processing worker</li>
+                <li>the job position include works like kitchen, bathroom, windowsill installation</li>
+                <li>assembly work with Corian material</li>
+            </ul>
+        </section>
+        <!-- /WORK EXPERIENCE -->
+
+        <hr>
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education</h2>
+            <p>University of Latvia / FRONT-END website development course <em>2022</em></p>
+            <p>Riga Coding School /  WEB Development course <em>2022</em></p>
+            <p>Riga Crafts school / Woodworcking <em>2001 - 2005</em></p>
+            <p>O.Kalpaks Riga Folk Art Primary School<em>1996 - 2001</em></p>
+           
+
+        </section>
+        <!-- EDUCATION -->
+
+        <hr>
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <b>In the courses I have learned the basics of following skills and technologies:</b>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 (LESS)</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>MySql</li>
+                <li>PHP</li>
+                <li>Git</li>
+                <li>Bootstrap</li>
+            </ul>
+
+            <b>I’m also interested in following technologies:</b>
+            <ul>
+                <li>React JS</li>
+                <li>jQuery</li>
+                <li>Next.JS</li>
+                <li>Vue.JS</li>
+                <li>Gatsby</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive UI</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe Photoshop</li>
+                <li>Google Optimize</li>
+            </ul>
+        </section>
+        <!-- SKIllS -->
+
+        <hr>
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>My hobbyies</summary>
+                <ul>
+                    <li>Travel</li>
+                    <li>Cycling</li>
+                    <li>Camping</li>
+                    <li>Ski</li>
+                </ul>
+              </details>
+        </section>
+        <hr>
+        <!-- LANGUAGES -->
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Latvian (native)</li> 
+                <li>English (intermediate)</li>    
+                <li>Russian (intermediate)</li>    
+            </ul>
+        </section>
+        <!-- LANGUAGES -->
+
+        <hr>
+        <!-- CONTACT FORM -->
+        <section id="contactme">
+            <h2>Contact me </h2>
+
+            <form action="action_page.php">
+                <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
+                <br><br>
+
+                <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
+                <br><br>
+            
+                <textarea id="subject" name="subject" placeholder="Write something.." style="width: 200px; height:100px"></textarea>
+                <br><br>
+
+                <input type="submit" value="Submit">            
+              </form>
+        </section>
+        <!-- CONTACT FORM -->
     </main>
-  </body>
+</body>
 </html>
+

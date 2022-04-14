@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="form_container">
+      <h1>Reģistrācijas forma</h1>
+      <br />
+      <form action="" method="get">
+        <fieldset>
+          <br />
+          <label for="name">Ievietot vārdu:</label>
+          <input type="text" name="name" id="name" />
+          <label for="password">Ievietot paroli:</label>
+          <input type="password" name="password" id="password" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Informācija par sevi</legend>
+          <br />
+          <h2>Dzimums</h2>
+          <br />
+          <div>
+            <input type="radio" id="virietis" value="virīetis" />
+            <label for="virietis">vīrietis</label>
+          </div>
+          <div>
+            <input type="radio" id="sieviete" value="sieviete" />
+            <label for="sieviete">sieviete</label>
+          </div>
+          <div>
+            <br />
+            <label for="date">dzimšanas datums</label>
+            <input type="date" name="date" id="date" />
+          </div>
+          <br />
+          <h2>Adrese</h2>
+          <br />
+          <div>
+            <label for="adrese">Jūsu pilsēta</label>
+            <select name="adrese" id="adrese">
+              <optgroup>
+                <option value="riga">Rīga</option>
+                <option value="jelgava">Jelgava</option>
+                <option value="ventspils">Ventspils</option>
+                <option value="kuldiga">Kūldīga</option>
+                <option value="dobele">Dobele</option>
+              </optgroup>
+            </select>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Jūsu hobiji</legend>
+          <br />
+          <label for="hobiji">Jūs varat izvēlēties jebkuru hobiju skaitu</label>
+          <br />
+          <input type="checkbox" name="celot" id="celot" />
+          <label for="celot">Ceļot</label>
+          <input type="checkbox" name="programet" id="programet" />
+          <label for="programet">Programēt</label>
+          <br />
+          <input type="checkbox" name="zimet" id="zimet" />
+          <label for="zimet">Zīmēt</label>
+          <input type="checkbox" name="sports" id="sports" />
+          <label for="sports">Sportot</label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Savs lauks</legend>
+          <label for="apraksts">Pastāsti par sevi </label>
+          <br />
+          <textarea
+            name="apraksts"
+            id="apraksts"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <br />
+        <input type="submit" value="Sūtīt" />
+      </form>
+    </section>
+  </body>
+</html>
