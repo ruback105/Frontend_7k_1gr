@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
     
+    <main>
+        
+            
+                <form>
+                    <fieldset>
+            <label for="fname">Ievietot vārdu:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Ievietot paroli:</label>
+            <input type="text" id="lname" name="lname">
+                    </fieldset>
+                    <fieldset>
+   
+          <legend style="background-color: yellow;"><b>Informācija par sevi</b></legend>
+         <br>
+            <caption><b>Dzimums</b></caption>
+            <br>
+            <br>
+            <label> Vīrietis</label>
+            <input type="checkbox">
+            <br>
+            <label> Sieviete</label>
+            <input type="checkbox">
+            <br>
+            <br>
+          <label>Dzimšanas datums</label>
+        <input type="date">
+        <p><b>Adresse</b></p>
+        <label>Jūsu pilsēta</label>
+        <select style="width: 150px;" name="Adreses" id="Adreses">
+            <option value="Rīga">Rīga</option>
+            <option value="Liepāja">Liepāja</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend style="background-color: yellow;"><b>Jūsu hobbies</b></legend>
+          <br>
+        <caption>Jūs varat izvēlēties jebkuru hobiju skaitu</caption>
+<br>
+        <table>
+            <br>
+              <caption>
+                  <tbody>
+                      <tr>
+                          <td>
+                            <label>Ceļojumi</label>
+                              <input type="checkbox">
+                          </td>
+                          <td>
+                              <label>Programmēšana</label>
+                            <input type="checkbox">
+                        </td>
+                      </tr>
+                      <td>
+                        <label>Zīmēt</label>
+                      <input type="checkbox">
+                  </td>
+                  <td>
+                    <label>Spēlēt mūzikas instrumentus</label>
+                  <input type="checkbox">
+              </td>
+                  </tbody>
+              </caption>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend style="background-color: yellow;"><b>Savs laukums</b></legend>
+          <br>
+          <caption>Izvēlies savu programmēšanas valodu</caption>
+          <br>
+          <br>
+          <input type="radio" id="php" name="fav_language" value="PHP">
+            <label for="html">PHP</label>
+            <input type="radio" id="Ruby" name="fav_language" value="Ruby">
+            <label for="css">Ruby</label>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+        <button style="background-color: yellow; padding: 10px; color: rgb(53, 15, 15); border-radius: 5px; border: 1px solid grey; cursor: pointer;" type="button" onclick="alert('Forma nosūtīta')">Sūtīt</button>
+         </form>
+    </main>
+
+
 </body>
 </html>
