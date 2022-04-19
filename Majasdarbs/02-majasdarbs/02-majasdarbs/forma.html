@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+
+<body>
+    <H1>Reģistracijas forma</H1>
+    <form action="someserver" method="get">
+        <fieldset>
+            <label for="name">Ievietot vārdu</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="password">Ievietot paroli</label>
+            <input type="password" name="password" id="password" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informacija par sevi</legend>
+
+            <h3>Dzimums</h3>
+            <input type="radio" name="gender" id="gender-male">
+            <label for="gender-male">Vīrietis</label><br>
+
+            <input type="radio" name="gender" id="gender-female">
+            <label for="gender-female">Sieviete</label><br>
+            <br>
+            <label for="date">Dzimšanas datums:</label>
+            <input type="date" name="date" id="date" required>
+
+            <h3>Adresse</h3>
+            <label for="adress">Jūsu pilseta:</label>
+            <input list="adress-list" name="adress" id="adress">
+            <datalist id="adress-list">
+                <option value="Rīga">
+                <option value="Jelgava">
+                <option value="Liepaja">
+                <option value="Ventspils">
+                <option value="Daugavpils">
+                <option value="Valmiera">
+            </datalist>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Jusu hobbies</legend>
+            <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="travel" id="travel">
+                        <label for="travel">Ceļojumi</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="programming" id="programming">
+                        <label for="programming">Programmēšana</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="drawing" id="drawing">
+                        <label for="drawing">Zīmēt</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="music" id="music">
+                        <label for="music">Spēlēt mūzikas instrumentus</label><br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Jūsu komentāri:</legend>
+            <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Jūsu komentāri"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+
+</html>
