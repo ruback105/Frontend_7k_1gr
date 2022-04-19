@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"
+    </head>
+    <body>
+       <!-- form --> 
+        <h2>Reģistrācijas forma</h2>
+        <form action="" method="get">
+            <fieldset>
+                <label for="name">Ievietot vārdu:</label>
+                <input type="text" name="vards" id="name" required>
+                <label for="password">Ievietot paroli:</label>
+                <input type="password" name="parole" id="password" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <style>
+                    legend {background-color: yellow;}
+                </style>
+                <legend>Informācija par sevi</legend>
+                <p><b>Dzimums</b></p>
+                <input type="radio" name="dzimums" id="Vīrietis" required>
+                <label for="Vīrietis">vīrietis</label><br>
+                <input type="radio" name="dzimums" id="Sieviete" required>
+                <label for="Sieviete">sieviete</label><br> 
+                <p>dzimšanas datums <input type="date" name="calendar" range="01/01/1900-20/04/2022"</p>
+                <p><b>Adrese</b></p>
+                <label for="city-select">Jūsu pilsēta</label>
+                <input list="cities" name="city-select" id="city-select">
+                <datalist id="cities">
+                    <option value="Rīga">
+                    <option value="Jelgava">
+                </datalist>
+            </fieldset>
+            <br>
+            <fieldset>
+                <style>
+                    legend {background-color: yellow;}
+                </style>
+                <legend>Jūsu hobiji</legend>
+                <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox">Ceļojumi</td>
+                        <td><input type="checkbox">Programmēšana</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">Zīmēt</td>
+                        <td><input type="checkbox">Spēlēt mūzikas instrumentus</td>
+                    </tr>
+                </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <style>
+                    legend1 {background-color: yellow;color:green}
+                </style>
+                <legend1><b>Dažāda izmēra teksts</b></legend1>
+                <p>
+                    <ins>Normāla izmēra teksts</ins>
+                </p>
+                <p>
+                    <small><del>Mazāka izmēra izsvītrots teksts</del></small>
+                </p>
+            </fieldset>
+            <br>
+            <button type="submit">Sūtīt</button>
+        </form>
+    </body>
+</html>
