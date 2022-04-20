@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Forms and inputs birkas</title>
+  </head>
+<body>
+    <h1>Registrācijas forma</h1>
+    <form action="">
+     <fieldset>
+         <label for="name">Ievietot vārdu:</label> 
+         <input type="text" name="name" id="name">
+         <label for="password">Ievietot paroli:</label> 
+         <input type="password" name="password" id="password">
+    </fieldset>
+        <br>
+    <fieldset>
+            <legend><mark>Informācija par sevi</mark></legend>
+        <h3>Dzimums</h3>
+            <input type="radio" id="vīrietis" name="Dzimums" value="vīrietis">
+            <label for="vīrietis">vīrietis</label><br>
+            <input type="radio" id="sieviete" name="Dzimums" value="sieviete">
+            <label for="sieviete">sieviete</label><br>
+           <br>
+            <label for="birthday">dzimšanas datums</label>
+            <input type="date" id="birthday" name="birthday">
+        <h3>Adresse</h3>
+            <label for="city-select">Jūsu pilsēta:</label> 
+         <select name="city" id="city select">
+            <option value="riga">Rīga</option>
+            <option value="jelgava">Jelgava</option>
+        </select>
+    </fieldset>
+       <br>
+    <fieldset>
+    <legend><mark>Jūsu hobiji</mark></legend>
+    
+        <input type="checkbox" id="Ceļojumi" name="hobiji" >
+        <label for="hobiji">Ceļojumi</label>
+        <input type="checkbox" name="hobiji" id="ceļojumi">
+        <label for="hobiji">Programmēšana</label> <br>
+        <input type="checkbox" id="Zīmēt" name="hobiji" >
+        <label for="hobiji">Zīmēt</label>
+        <input type="checkbox" id="Spēlēt mūzikas instrumentus" name="hobiji" >
+        <label for="hobiji">Spēlēt mūzikas instrumentus</label>
+ </fieldset>
+       <br>
+ <fieldset>
+        <legend><mark>Jūsu kontakti</mark></legend>
+        <br>
+         <label for="email">E-mail:</label> 
+         <input type="email" name="email" id="email">
+         <label for="tel">Mob.tel.:</label>
+         <input type="tel" name="tel" id="tel">
+ </fieldset>
+ <br>
+ <button>Send</button>
+    </form>
+    
+</body>
