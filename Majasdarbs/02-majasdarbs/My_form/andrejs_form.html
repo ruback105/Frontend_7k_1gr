@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mana forma</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8" />
+  </head>
+  <body> 
+    <h1>Reģistrācijas forma</h1>
+    <fieldset>  
+        <form>
+            <label>Ievietot vārdu:</label>
+            <input/>
+            <label>Ievietot paroli:</label>
+            <input/>
+        </form>
+    </fieldset><br>
+        <form action="/action_page.php">
+            <fieldset>
+             <legend>Informacija par sevi</legend>
+             <p><strong>Dzimums</strong></p>
+             <input type="radio">
+             <label>vīrietis</label><br>
+             <input type="radio">
+             <label>sieviete</label><br><br>
+             <label>dzimšanas datums</label>
+             <input type="date"><br>
+             <p><strong>Adrese</strong></p>
+             <label>Jūsu pilsēta</label>
+             <input list="pilsētas">
+             <datalist id="pilsētas">
+             <option value="Rīga">
+             <option value="Jelgava">
+             <option value="Cēsis">
+             </datalist>
+            </fieldset>
+           </form>
+          </form>
+        </fieldset><br>
+                <fieldset>
+                 <legend>Jusu hobbies</legend>
+                 <table>
+                  <caption>Jūs varat izvēlēties jebkuru hobiju skaitu</caption>
+                  <tr>
+                    <td><input type="checkbox">
+                      <label>Ceļojumi</label><br></td>
+                    <td><input type="checkbox">
+                      <label>Programmēšana</label><br></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox">
+                      <label>Zīmēt</label>
+                    </td>
+                    <td><input type="checkbox">
+                      <label>Spēlēt mūzikas instrumentus</label><br></td>
+                  </tr>                
+                </table>
+                </fieldset>
+               </form><br>
+               <fieldset><legend>CV</legend>
+                <form>
+                  <label>Pievienot savu CV:</label>
+                  <input type="file"><br><br>
+                  <input type="submit">
+                </form>
+                </fieldset><br>
+                <button>Sūtīt</button>
+  </body>
