@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Forms and inputs birkas</title>
+ 
+      <!-- form -->
+      <hr>
+      <h2>Reģistrācijas forma</h2>
+      <form action="" method="get">
+        <fieldset>
+          <label for="name">Ievadi vārdu:</label>
+          <input type="text" name="name" id="name" required>
+            <label for="password">Ievadi paroli:</label>
+            <input type="password" name="password" id="password" required>
+        </fieldset>
+          <br>
+        <fieldset>
+          <legend>Informācija par sevi</legend>
+          <p>Dzimums:</p>
+
+          <div>
+            <input type="radio" id="virietis" name="virietis" value="gender"
+                   >
+            <label for="huey">Vīrietis</label>
+          </div>
+          <div>
+            <input type="radio" id="sievietes" name="sieviete" value="gender">
+            <label for="sieviete">Sieviete</label>
+            <br>
+            <br>
+        
+            <label for="birthday">Dzimšanas datums:</label>
+<input type="date" id="birthday" name="birthday">
+          </div>
+       
+      <br>
+        <legend>Adrese</legend>
+        <label for="city-select">Pilsēta</label>
+        <select name="city" id="city-select">
+          <optgroup label="Latvija">
+            <option value="riga">Riga</option>
+            <option value="kraslava">Krāslava</option>
+            <option value="zilupe">Zilupe</option>
+          </optgroup>
+        </select>
+    </fieldset>
+    <br>
+        <br>
+
+        <fieldset>
+            <legend>Jūsu hobiji:</legend>
+        
+            <div>
+              <input type="checkbox" id="photo" name="photo">
+              <label for="photo">Foto</label>
+              <input type="checkbox" id="video" name="video">
+              <label for="video">Video</label>
+            </div>
+            <input type="checkbox" id="Movie" name="Movie">
+            <label for="movie">Filmas</label>
+            <input type="checkbox" id="Cartoons" name="Cartoons">
+            <label for="cartoons">Multfilmas</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Savs laukums:</legend>
+        
+            <div>
+            <label for="lunch">Ko vēlaties ēst vakariņās:</label>
+
+            <select id="lunch">
+                <option value="">--Lūdzu izvēlaties vienu maltīti--</option>
+                <option value="zivs">Zivs</option>
+                <option value="cuka">Cūkgaļas šašliks</option>
+                <option value="vista">Vistas fileja</option>
+                <option value="vegeterian">Veģetārais ēdiens</option>
+                <option value="none">Nevēlos vakariņas</option>
+            </select>
+        </fieldset>
+
+      </form>
+      <!-- /form -->
+    </article>
+  </body>
+</html>
