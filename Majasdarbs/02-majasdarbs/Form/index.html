@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reģistrācijas forma</title>
+  </head>
+  <body>
+    <h2>Reģistrācijas forma</h2>
+    <!-- Forma -->
+    <form action="" method="get">
+      <fieldset>
+        <label for="name">Ievadīt vārdu:</label>
+        <input type="text" name="name" />
+        <label for="password">Ievadīt paroli:</label>
+        <input type="password" name="password" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Informācija par sevi:</legend>
+        <h4>Dzimums</h4>
+        <div>
+          <input type="radio" name="man-sex" />
+          <label for="man-sex">Vīrietis</label>
+        </div>
+        <div>
+          <input type="radio" name="woman-sex" />
+          <label for="woman-sex">Sieviete</label>
+        </div>
+        <br />
+        <label for="birthday">Dzimšanas datums</label>
+        <input type="date" name="birthday" />
+        <h4>Adrese</h4>
+        <label for="city"> Jūsu pilsēta:</label>
+        <select name="city">
+          <option value="Riga">Rīga</option>
+          <option value="Jurmala">Jūrmala</option>
+          <option value="Liepaja">Liepāja</option>
+          <option value="Vetspils">Vetspils</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Jūsu hobiji</legend>
+        Jūs variet izvēlēties jebkuru hobiju
+        <table>
+          <tr>
+            <td>
+              <input type="checkbox" name="drawing" />
+              <label for="drawing">Zīmēšana</label>
+            </td>
+            <td>
+              <input type="checkbox" name="travel" />
+              <label for="travel">Ceļošana</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="running" />
+              <label for="running">Skriešana</label>
+            </td>
+            <td>
+              <input type="checkbox" name="programming" />
+              <label for="programming">Programmēšana</label>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <input
+          type="button"
+          onclick="alert('Paldies, ka uzklikšķināji!')"
+          value="Uzklikšķini!"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>
