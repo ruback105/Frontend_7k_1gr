@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+        <fieldset>
+          <label >Your Name:</label>
+          <input type="text" required />
+          <label >Your Password:</label>
+          <input type="password" required />
+        </fieldset>
+        <br/>
+     <fieldset>
+            <legend><mark>Information about yourself:</mark></legend>
+            <h2>Your gender</h2>
+            <input type="radio" name="gender"/> Male <br/><input type="radio" name="gender" /> Female
+            <br/>
+            <br/>
+            Your birth date <input type="date"/> 
+            <br/>
+            <h2>Birthplace</h2>
+            Name of the City <select>
+                <option id="Liepaja">Liepaja</option>
+                <option id="Riga">Riga</option>
+                <option id="Ventspils">Ventspils</option>
+                <option id="Other">Other</option>
+            </select>        Other <input type="list"/>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><mark>Your Hobbies:</mark></legend>
+        <input type="checkbox" id="Traveling" name="Traveling" value="Bike">
+        <label for="Traveling"> Traveling</label><br>
+        <input type="checkbox" id="Sports" name="Sports" value="Car">
+        <label for="Sports"> Sports</label><br>
+        <input type="checkbox" id="Art" name="Art" value="Boat">
+        <label for="Art"> Art </label>
+        <br>
+        Other <input type="text"/>
+        <br><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><mark>About Yourself:</mark></legend>
+            <label for="story">About Yourself:</label>
+            <textarea id="story" name="story" rows="10" cols="33">
+            From 100 - 500 words:</textarea>
+        <br><br>
+      </fieldset>
+      <br/>
+      <input type="submit" value="Submit">
+</body>
+</html>
