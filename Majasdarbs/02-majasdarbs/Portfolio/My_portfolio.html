@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      section {
+        padding: 50px;
+        min-height: 20vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#work-experience">Darba pieredze</a></li>
+          <li><a href="#education">Izglītība</a></li>
+          <li><a href="#skills">Prasmes</a></li>
+          <li><a href="#faq">BUJ</a></li>
+          <li><a href="#languages">Valodas</a></li>
+          <li><a href="#contactme">Sazinies ar mani</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ABOUT ME -->
+      <section id="aboutme">
+        <img src="./foto.jpg" alt="" width="100px" height="100px" />
+        <address>
+          <h1>Mārtiņš Strods | SAP konsultants</h1>
+          <a href="tel:+37127753432">+371 27753432</a><br />
+          <a href="mailto:strods.martins@gmail.com">strods.martins@gmail.com</a
+          ><br />
+        </address>
+      </section>
+      <!-- /ABOUT ME -->
+      <hr />
+      <!-- Work experience -->
+      <section id="work-experience">
+        <h2>Darba pieredze</h2>
+        <h3>Helmes Latvia SIA | SAP konsultants</h3>
+        <em>Augusts 2021 - present</em>
+
+        <ul>
+          <li>Klienta SAP sistēmas uzturēšana un attīstīšana</li>
+          <li>Testa protokolu izstrādāšana un testēšana</li>
+          <li>Konsultācijas</li>
+        </ul>
+
+        <h3>Onninen SIA | Noliktavas vadītājs</h3>
+        <em>Marts 2019 - Augusts 2021</em>
+
+        <ul>
+          <li>Nodrošināt vairumtirdzniecības noliktavas ikdienas darbu</li>
+          <li>Vadīt un motivēt 12 noliktavas darbinieku komandu</li>
+          <li>Būt atbildīgajam var ugunsdrošību uzņēmumā</li>
+        </ul>
+
+        <h3>Onninen SIA | Transporta speciālists</h3>
+        <em>Februāris 2014 - Marts 2019</em>
+
+        <ul>
+          <li>Importa un eksporta organizēšana</li>
+          <li>Transporta maršrutu plānošana un vietējo piegāžu organizēšana</li>
+          <li>Uzņēmuma autoparka pārvaldīšana un koordinēšana</li>
+        </ul>
+      </section>
+      <!-- /Work experience -->
+
+      <hr />
+      <!-- EDUCATION -->
+      <section id="education">
+        <h2>Izglītība</h2>
+        <p>
+          Profesionālais bakalaura grāds uzņēmējdarbības loģistikā un loģistikas
+          struktūrvienības vadītāja kvalifikācija
+        </p>
+        <p>
+          Rīgas tehniskā universitāte, Inženierekonomikas un vadības fakultāte,
+          Rīga (Latvija) <em>09/2011 – 05/2016</em>
+        </p>
+        <br />
+        <p>Vispārējā vidējā izglītība</p>
+        <p>
+          Dobeles Valsts ģimnāzija, Dobele (Latvija) <em>09/2008 – 05/2011</em>
+        </p>
+      </section>
+      <!-- /EDUCATION -->
+
+      <hr />
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Prasmes</h2>
+        <b>Labas komunikācijas prasmes:</b>
+        <ul>
+          <li>
+            ar sadarbības partneriem vienojoties par pakalpojumiem, to
+            nosacījumiem un, protams, cenām.
+          </li>
+          <li>
+            ar Latvijas un Baltijas kolēģiem un vadību, gan par ikdienišķiem
+            jautājumiem, gan par citām tēmām telefoniski, e-pastos, klātienē un
+            komandējumos
+          </li>
+          <li>ar padotajiem ikdienas darbā</li>
+        </ul>
+
+        <b>Ar darba pienākumiem saistītās prasmes:</b>
+        <ul>
+          <li>SAP sertifikāts "Extended Warehouse Management"</li>
+          <li>Autoiekrāvēja tiesības</li>
+          <li>Elektroiekrāvēja tiesības</li>
+          <li>160 stundu kurss "Ugunsdrošība un aizsardzība"</li>
+        </ul>
+      </section>
+      <!-- /SKIllS -->
+
+      <hr />
+
+      <!-- FAQ -->
+      <section id="faq">
+        <h2>BUJ</h2>
+        <details>
+          <summary>Mani hobiji</summary>
+          <ul>
+            <li>Snowbords</li>
+            <li>Veikbords</li>
+            <li>Motocikli</li>
+          </ul>
+        </details>
+      </section>
+      <!-- / FAQ -->
+
+      <hr />
+      <!-- LANGUAGES -->
+      <section id="languages">
+        <h2>Valodas</h2>
+        <ul>
+          <li>Latviešu (Dzimtā)</li>
+          <li>Angļu (augstākais līmenis)</li>
+          <li>Krievu (sarunvalodas līmenis)</li>
+        </ul>
+      </section>
+      <!-- LANGUAGES -->
+      <hr />
+      <!-- CONTACT FORM -->
+      <section id="contactme">
+        <h2>Contact me </h2>
+
+        <form action="action_page.php">
+            <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
+            <br><br>
+
+            <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
+            <br><br>
+        
+            <textarea id="subject" name="subject" placeholder="Write something.." style="width: 200px; height:100px"></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">            
+          </form>
+    </section>
+    <!-- CONTACT FORM -->
+    </main>
+  </body>
+</html>
