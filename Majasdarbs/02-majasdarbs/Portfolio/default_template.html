@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <meta name="description" content="" />
+    <title> Enni's CV</title>
+    <meta name="description" content="Enni's CV"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="UTF-8" />
   </head>
@@ -10,7 +10,11 @@
     <header>
       <nav>
         <ul>
-          <li><a href="">MenuItem1</a></li>
+          <li><a href="#work experience">Work experience</a></li>
+          <li><a href="#education"> Education</a></li>
+          <li><a href="#additional education">Additional education</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="contactme">Contact me</a></li>
         </ul>
       </nav>
     </header>
@@ -18,12 +22,84 @@
     <main>
       <!-- ABOUT ME -->
       <section id="aboutme">
-        <img src="" alt="" width="100px" height="100px" />
+        <img src="data:image/jpeg;base64,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" alt="" width="180px" height="180px" />
         <address>
-          <h1>Contact info:</h1>
+          <h1>My contact info:</h1>
+          <p>Phone number:+371 22011589</p>
+          <p>E-mail: enni.zuka@inbox.lv</p>
+          <p>Github: @ZukaEnni</p>
         </address>
       </section>
       <hr />
+      <section id="work experience">
+        <h2>Work experience</h2>
+        <h3><em>AS SEB bank | AML Investigation Specialist
+        </em></h3>
+        <em>September 2021 - now</em>
+        <ul>
+          <li>Investigation of suspicious transactions</li>
+          <li>Cooperation with national authorities during the investigation of transactions</li>
+          <li>Referral of cases to the responsible authorities</li>
+        </ul>
+        <h3><em>AS Luminor bank | KYC Due Diligence Data Specialist
+        </em></h3>
+        <em>January 2021 - September 2021</em>
+        <ul>
+          <li>Performing due diligence (EDD/OEDD) analysis on customers
+            through a variety of data sources including bank systems, public
+            databases and records</li>
+            <li>Take risk-based case decisions with a clearly documented and
+              auditable record, in the context of internal risk appetite policy</li>
+            <li>Escalate suspicions and/or concerns to the Compliance division
+              for review</li>
+              <li>Maintain regular contact with Relationship Managers to obtain
+                necessary information about customers and account activities</li>
+            </ul>
+            <hr>
+            <section id="education">
+              <h2>Education</h2>
+            <h3>BA School of Business and Finance, Business College</h3>
+            <p><em>2016-2018</em></p>
+            <h3>Natalija Draudzina Riga Secondary School</h3>
+            <p><em>2010 - 2012</em></p>
+            </section>
+            
+            <hr>
+            <section id="additional education">
+              <h2>Additional education</h2>
+              <h3>2021</h3>
+              <p><em>JAVA Course</em></p>
+              <h3>2017</h3>
+              <p><em>Course "Leadership", Italy</em></p>
+              <h3>2012</h3>
+              <p><em>Drivers license</em></p>
+      </section>
+      <hr>
+      <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>Latvian (native)</li>    
+            <li>English (working Professional)</li>    
+            <li>Russian (basic knowledge)</li>
+            <li>German (basic knowledge)</li>     
+        </ul>
+    </section>
+    <hr>
+    <section id="contactme">
+      <h2>Contact me </h2>
+
+      <form action="action_page.php">
+          <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
+          <br><br>
+
+          <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
+          <br><br>
+      
+          <textarea id="subject" name="subject" placeholder="Write something.." style="width: 200px; height:100px"></textarea>
+          <br><br>
+
+          <input type="submit" value="Submit">            
+        </form>
     </main>
   </body>
 </html>
