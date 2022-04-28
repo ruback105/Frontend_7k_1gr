@@ -12,11 +12,8 @@
         <nav>
             <h1 class="nav-logo">KristersG</h1>
             <ul class="nav-links">
-                <li class="nav-item"><a href="#work-experience">Work experience</a></li>
-                <li class="nav-item"><a href="#education">Education</a></li>
-                <li class="nav-item"><a href="#skills">Skills</a></li>
-                <li class="nav-item"><a href="#faq">FAQ</a></li>
-                <li class="nav-item"><a href="#languages">Languages</a></li>
+                <li class="nav-item"><a href="#about-me">About</a></li>
+                <li class="nav-item"><a href="#resume">Resume</a></li>
                 <li class="nav-item"><a href="#contact-me">Contact me</a></li>
             </ul>
         </nav>
@@ -25,24 +22,21 @@
     <main>
         <!-- ABOUT ME -->
         <section id="aboutme">
-            <img src="./instagram.png" alt="profileImg" width="100px" height="100px">
             <address>
-                <h1 class="big-heading">Kristers Gūtmanis - Frontend developer</h1>
+                <img class="svg-image" src="../Portfolio/images/Bgimage.svg" alt="Kiwi standing on oval">
+                <h1 class="big-heading">Kristers Gūtmanis - <span style="color: #75AFA5">Frontend</span> developer</h1>
                 <div class="header-elements-centered">
-                <a href="tel:+37126024071">+371 26024071</a><br>
-                <a href="mailto:name.surname@gmail.com">kristersgutmanis@gmail.com</a><br>
-                <a href="#contact-me">Contact me</a>
+                <button class="button-contact" onclick="window.location.href='#contact-me'">Contact me</button>
             </div>
             </address>
         </section>
         <!-- /ABOUT ME -->
 
-        <hr>
         <!-- WORK EXPERIENCE -->
         <div class="background-container">
         <div class="container-resume">
-        <section id="work-experience">
-            <h2>Work experience</h2>
+        <section id="resume">
+            <h2 style="color: #3A5A6A;"> &lt; Work experience &gt;</h2>
             <h3>Currently working.</h3>
             <em>Jul 2018 - present</em>
             <ul>
@@ -53,23 +47,32 @@
             <em>Jun 2017 - Apr 2018</em>
 
             <ul>
-                <li>Internship in an architecture office - "Office name".</li>
-                      </section>
+            <li>Internship in an architecture office - "Office name".</li>
+            </ul>
+
+            <ul>
+                <em>Jun 2014 - Apr 2017</em>
+                <li>Freelancing as a 3D artist</li>
+                </ul>
+            <h2 style="color: #3A5A6A;"> &lt;/Work experience &gt;</h2>   
+            </section>
                       </div>
         <!-- /WORK EXPERIENCE -->
 
-        <hr>
+        
         <!-- EDUCATION -->
         <div class="container-resume">
-        <section id="education">
-            <h2>Education</h2>
+        <section>
+            <h2 style="color: #3A5A6A;"> &lt; Education &gt;</h2>
             <p>Rīgas Celtniecības koledža. <em>2016 – 2018</em></p>
             <p>Liepājas Dizaina un Mākslas vidusskola. <em>2010 – 2014</em></p>
+            <h2 style="color: #3A5A6A;"> &lt;/Education &gt;</h2>
         </section>
         <!-- EDUCATION -->
          <!-- FAQ -->
-         <section id="faq">
-            <h2>FAQ</h2>
+         <section>
+             <div class="faq-container">
+            <h2 style="color: #3A5A6A;"> &lt; FAQ &gt;</h2>
             <details>
                 <summary>My hobbyies?</summary>
                 <ul>
@@ -77,80 +80,70 @@
                     <li>Art</li>
                 </ul>
               </details>
-              <br>
+              <details>
+              <summary>Languages</summary>
+                <ul>
+                    <li>Latvian (native)</li>    
+                    <li>English (working Professional)</li>  
+                </ul>
+            </details>
               <details>
                 <summary>My favorite playlist</summary>
                 <br>
                 <iframe 
                     src="https://open.spotify.com/embed/playlist/16gXsmg48MdRTqCLNnx9Cu?utm_source=generator" 
-                    width="30%" 
-                    height="380" 
+                    width="100%" 
+                    height="80px" 
                     frameBorder="0" 
                     allowfullscreen="" 
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                 </iframe>
               </details>
+              <h2 style="color: #3A5A6A;"> &lt;/FAQ &gt;</h2>
+            </div>
         </section>
-        <!-- LANGUAGES -->
-
-        <!-- LANGUAGES -->
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>Latvian (native)</li>    
-                <li>English (working Professional)</li>    
-            </ul>
-        </section>
-        <!-- LANGUAGES -->
-
+        
     </div>
-        <hr>
+ 
         <!-- SKILLS -->
         <div class="container-resume">
-        <section id="skills">
-            <h2>Skills</h2>
-            <b>My skills:</b>
+        <section>
+            <h2 style="color: #3A5A6A;"> &lt; Skills &gt;</h2>
             <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>Sass</li>
+                <li>SCSS</li>
                 <li>JavaScript</li>
                 <li>React JS</li>
-                <li>PHP basics</li>
                 <li>Git</li>
                 <li>Bootstrap</li>
                 <li>Tailwind CSS</li>
                 <li>Adobe Photoshop</li>
             </ul>
-
-            <b>I’m also interested in following technologies:</b>
-            <ul>
-                <li>C#</li>
-                <li>Unity</li>
-            </ul>
+            <h2 style="color: #3A5A6A;"> &lt;/Skills &gt;</h2>
         </section>
     </div>
         <!-- SKIllS -->
     </div>
-        <hr>
        
-        <hr>
         <!-- CONTACT FORM -->
         <section id="contact-me">
+            <div class="flex-container">
             <h2>Contact me </h2>
 
             <form action="action_page.php">
-                <input type="text" id="firstname" name="firstname" placeholder="Your name.." style="width: 200px;">
-                <br><br>
+                <input class="input-text" type="text" id="firstname" name="firstname" placeholder="Your name..">
+             
 
-                <input type="text" id="company" name="lastname" placeholder="Company name.." style="width: 200px;">
-                <br><br>
+                <input class="input-text" type="text" id="company" name="lastname" placeholder="Company name..">
             
-                <textarea id="subject" name="subject" placeholder="Write something.." style="width: 200px; height:100px"></textarea>
-                <br><br>
-
-                <input type="submit" value="Submit">            
+            
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <div class="button-container">
+                <button onclick="alert('Forma nosūtīta')" class="contact-form-button" type="submit" >Submit </button>   
+            </div>        
               </form>
+            </div>
         </section>
         <!-- CONTACT FORM -->
     </main>
