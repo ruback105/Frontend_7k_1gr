@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reģistrācijas forma</title>
+</head>
+<body>
+    <h2>Reģistrācijas forma</h2>
+    <form action="" method="get">
+        <fieldset>
+            <label for="name">Ievietot vārdu:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="password">Ievietot paroli:</label>
+            <input type="password" name="password" id="password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <mark>Informācija par sevi</mark>
+            </legend>
+            <label for="sex select"><p><b>Dzimums</b></p></label>
+            <input type="radio" id="man" name ="sex" value="man">
+            <label for="man">vīrietis</label><br>
+            <input type="radio" id="women" name ="sex" value="women">
+            <label for="women">sieviete</label><br>
+            <br>
+            <label for="DOB">dzimšanas datums</label>
+            <input type="date" name="" id="">
+            <br>
+            <br>
+            <label for="adress"><b>Adresse</b></label>
+            <br>
+            <br>
+            <label for="town">Jūsu pilsēta</label>
+            <input list="towns" id="town" name="Júsu pilséta"/>
+
+            <datalist id="towns">
+                <option value="Rīga"></option>
+                <option value="Jelgava"></option>
+            </datalist>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <mark>Jusu hobbies</mark>
+        </legend>
+<label for="hobbies">Jūs varat izvēleties jebkuru hobbiju skaitu</label>
+<br>
+<input type="checkbox" id="hobbie1" name="hobbie1" value="Ceļojumi"> 
+<label for="hobbie1">Ceļojumi</label>
+<input type="checkbox" id="hobbie2" name="hobbie2" value="Spēlēt mūzikas instrumentus"> 
+<label for="hobbie2">Spēlēt mūzikas instrumentus</label>   
+<br>
+<input type="checkbox" id="hobbie3" name="hobbie3" value="Zīmēt"> 
+<label for="hobbie3">Zīmēt</label>
+<input type="checkbox" id="hobbie4" name="hobbie4" value="Programmēšana"> 
+<label for="hobbie4">Programmēšana</label>         
+</fieldset>
+<fieldset>
+    <legend>
+        <mark>Jūsu miļāka krāsa</mark>
+    </legend>
+    <form action="/action_page.php">
+        <label for="favcolor">Izvēlēties jūsu mīļāko krāsu:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <input type="submit" value="Submit">
+      </form>
+    </form>
+    
+</body>
+    
+</html>
