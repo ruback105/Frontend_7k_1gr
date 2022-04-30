@@ -8,175 +8,207 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div id="content-holder">
-      <header>
-        <nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#work-experience">Work experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#contact-me">Contact info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- ABOUT ME -->
+      <section id="aboutme">
+        <address id="left-container">
+          <h1 id="hero-title-name">Alvis Franks</h1>
+          <h1 id="hero-title-position">Frontend developer</h1>
+          <section id="social-icons" class="hover-orange">
+            <a href="https://github.com/alvisfranks" class="hover-orange">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="rgb(189, 189, 189)"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)"
+                />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/alvisfranks/">
+              <svg
+                width="64"
+                height="64"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 455 455"
+                fill="rgb(189, 189, 189)"
+              >
+                <path
+                  d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+		            M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+		            c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+		            c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+		            c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+		            z"
+                />
+              </svg>
+            </a>
+            <a href="https://twitter.com/alvizzs">
+              <?xml version="1.0"?><svg
+                fill="rgb(189, 189, 189)"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="64"
+                height="64"
+              >
+                <path
+                  d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"
+                />
+              </svg>
+            </a>
+          </section>
+        </address>
+        <address id="right-container">
+          <a href="tel:+37122484848">+371 22484848</a>
+          <a href="mailto:franks@e6.lv">franks@e6.lv</a>
+          <a href="#contact-me">Contact me</a>
+        </address>
+      </section>
+      <hr />
+      <!-- WORK EXPERIENCE SECTION -->
+      <section id="work-experience">
+        <h2>Work experience</h2>
+        <h3>Site manager at AS "UPB"</h3>
+        <em>February 2020 - April 2022</em>
+        <ul>
+          <li>Prefabricated element assembly team leading.</li>
+          <li>Construction material delivery planinng.</li>
+          <li>Quality assurance of performed works.</li>
+          <li>Documentation and registers preparing and execution.</li>
+        </ul>
+        <h3>Digital filmmaker at "Robyworks"</h3>
+        <em>August 2018 - February 2020</em>
+        <ul>
+          <li>Extreme sports and coorporative event filming.</li>
+          <li>Video editing</li>
+          <li>Scriptwriting and story-building</li>
+          <li>Motion graphics creation with After effects</li>
+          <li>Audio design and engineering</li>
+        </ul>
+        <h3>IT Specialist internship at SIA "Liedata"</h3>
+        <em>January 2014 - June 2014</em>
+        <ul>
+          <li>Maintinance and service for various computers and systems.</li>
+          <li>CCTV installation works.</li>
+          <li>Network maintinance and upgrades.</li>
+        </ul>
+      </section>
+      <hr />
+      <!-- EDUCATION SECTION -->
+      <section id="education">
+        <h2>Education</h2>
+        <p>
+          Architectural technology and construction management - VIA University
+          Collage, Aarhus, Denmark. <em>2015 - 2018</em>
+        </p>
+        <p>
+          Computersystem technician - Liepajas Valsts tehnikums, Liepaja,
+          Latvia. <em>2010 - 2014</em>
+        </p>
+      </section>
+      <hr />
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <b
+          >In the everyday work I'm using the following skills and
+          technologies:</b
+        >
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 (SASS)</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Adobe Lightroom</li>
+          <li>Adobe Photoshop</li>
+          <li>Figma</li>
+          <li>Python</li>
+        </ul>
+      </section>
+      <hr />
+      <!-- FAQ -->
+      <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+          <summary>My hobbies?</summary>
           <ul>
-            <li><a href="#work-experience">Work experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#contact-me">Contact info</a></li>
+            <li>Filmmaking</li>
+            <li>Coding</li>
+            <li>Audio production</li>
+            <li>Cars</li>
+            <li>Content creation</li>
           </ul>
-        </nav>
-      </header>
-      <main>
-        <!-- ABOUT ME -->
-        <section id="aboutme">
-          <a href="https://github.com/alvisfranks">
-            <svg
-              width="64"
-              height="64"
-              viewBox="0 0 1024 1024"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
-                transform="scale(64)"
-                fill="#fffcf2"
-              />
-            </svg>
-          </a>
-          <address>
-            <h1>Alvis Franks | Frontend developer</h1>
-            <a href="tel:+37122484848">+371 22484848</a><br />
-            <a href="mailto:franks@e6.lv">franks@e6.lv</a><br />
-            <a href="#contact-me">Contact me</a>
-          </address>
-        </section>
-        <hr />
-        <!-- WORK EXPERIENCE SECTION -->
-        <section id="work-experience">
-          <h2>Work experience</h2>
-          <h3>Site manager at AS "UPB"</h3>
-          <em>February 2020 - April 2022</em>
-          <ul>
-            <li>Prefabricated element assembly team leading.</li>
-            <li>Construction material delivery planinng.</li>
-            <li>Quality assurance of performed works.</li>
-            <li>Documentation and registers preparing and execution.</li>
-          </ul>
-          <h3>Digital filmmaker at "Robyworks"</h3>
-          <em>August 2018 - February 2020</em>
-          <ul>
-            <li>Extreme sports and coorporative event filming.</li>
-            <li>Video editing</li>
-            <li>Scriptwriting and story-building</li>
-            <li>Motion graphics creation with After effects</li>
-            <li>Audio design and engineering</li>
-          </ul>
-          <h3>IT Specialist internship at SIA "Liedata"</h3>
-          <em>January 2014 - June 2014</em>
-          <ul>
-            <li>Maintinance and service for various computers and systems.</li>
-            <li>CCTV installation works.</li>
-            <li>Network maintinance and upgrades.</li>
-          </ul>
-        </section>
-        <hr />
-        <!-- EDUCATION SECTION -->
-        <section id="education">
-          <h2>Education</h2>
-          <p>
-            Architectural technology and construction management - VIA
-            University Collage, Aarhus, Denmark. <em>2015 - 2018</em>
-          </p>
-          <p>
-            Computersystem technician - Liepajas Valsts tehnikums, Liepaja,
-            Latvia. <em>2010 - 2014</em>
-          </p>
-        </section>
-        <hr />
-        <!-- SKILLS -->
-        <section id="skills">
-          <h2>Skills</h2>
-          <b
-            >In the everyday work I'm using the following skills and
-            technologies:</b
-          >
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3 (SASS)</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-            <li>Adobe Lightroom</li>
-            <li>Adobe Photoshop</li>
-            <li>Figma</li>
-            <li>Python</li>
-          </ul>
-        </section>
-        <hr />
-        <!-- FAQ -->
-        <section id="faq">
-          <h2>FAQ</h2>
-          <details>
-            <summary>My hobbies?</summary>
-            <ul>
-              <li>Filmmaking</li>
-              <li>Coding</li>
-              <li>Audio production</li>
-              <li>Cars</li>
-              <li>Content creation</li>
-            </ul>
-          </details>
-          <details>
-            <summary>My favorite location on earth?</summary>
-            <br />
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7214.602766733603!2d-118.48556445506065!3d33.994846597030545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2baa4ba9b5de7%3A0x605f44ea42d6b278!2sVenice%20Beach!5e0!3m2!1sen!2slv!4v1650801174852!5m2!1sen!2slv"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </details>
-        </section>
-        <hr />
-        <!-- LANGUAGES -->
-        <section id="languages">
-          <h2>Languages</h2>
-          <ol>
-            <li>Latvian (native)</li>
-            <li>US English (bilingual proficiency)</li>
-            <li>Russian (limited working proficiency)</li>
-          </ol>
-        </section>
-        <hr />
-        <!-- CONTACT ME -->
-        <section id="contact-me">
-          <h2>Contact me:</h2>
-          <form action="submit_form.php">
-            <input
-              type="text"
-              id="firstname"
-              placeholder="Your name.."
-              name="firstname"
-              style="width: 200px"
-            />
-            <br /><br />
-            <input
-              type="text"
-              id="company"
-              name="company-name"
-              placeholder="Company name.."
-              style="width: 200px"
-            />
-            <br /><br />
-            <textarea
-              name="subject"
-              id="subject"
-              cols="50"
-              rows="10"
-              placeholder="Write something.."
-            ></textarea>
-            <br /><br />
-            <input type="submit" value="Submit" />
-          </form>
-        </section>
-      </main>
-    </div>
+        </details>
+        <details>
+          <summary>My favorite location on earth?</summary>
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7214.602766733603!2d-118.48556445506065!3d33.994846597030545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2baa4ba9b5de7%3A0x605f44ea42d6b278!2sVenice%20Beach!5e0!3m2!1sen!2slv!4v1650801174852!5m2!1sen!2slv"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </details>
+      </section>
+      <hr />
+      <!-- LANGUAGES -->
+      <section id="languages">
+        <h2>Languages</h2>
+        <ol>
+          <li>Latvian (native)</li>
+          <li>US English (bilingual proficiency)</li>
+          <li>Russian (limited working proficiency)</li>
+        </ol>
+      </section>
+      <hr />
+      <!-- CONTACT ME -->
+      <section id="contact-me">
+        <h2>Contact me:</h2>
+        <form action="submit_form.php">
+          <input
+            type="text"
+            id="firstname"
+            placeholder="Your name.."
+            name="firstname"
+            style="width: 200px"
+          />
+          <br /><br />
+          <input
+            type="text"
+            id="company"
+            name="company-name"
+            placeholder="Company name.."
+            style="width: 200px"
+          />
+          <br /><br />
+          <textarea
+            name="subject"
+            id="subject"
+            placeholder="Write something.."
+          ></textarea>
+          <br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
   </body>
 </html>
