@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
     <header>
-        <nav>
+            
+        <nav class="nav-fixed">
             <h1 class="nav-logo">KristersG</h1>
             <ul class="nav-links">
-                <li class="nav-item"><a href="#about-me">About</a></li>
+                <li class="nav-item"><a href="#aboutme">About</a></li>
                 <li class="nav-item"><a href="#resume">Resume</a></li>
                 <li class="nav-item"><a href="#contact-me">Contact me</a></li>
             </ul>
@@ -147,5 +149,18 @@
         </section>
         <!-- CONTACT FORM -->
     </main>
+
+    <!-- Code for changing navbar color -->
+    <script>const navbar = document.querySelector('.nav-fixed')
+
+        window.onscroll = function() {
+        
+          // pageYOffset or scrollY
+          if (window.pageYOffset > 0) {
+            navbar.classList.add('scrolled')
+          } else {
+            navbar.classList.remove('scrolled')
+          }
+        }</script>
 </body>
 </html>
