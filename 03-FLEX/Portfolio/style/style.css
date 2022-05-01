@@ -1,0 +1,282 @@
+@import "normalize.css";
+@import "colors.css";
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    margin: 0;
+
+    background-color: rgb(245, 245, 245);
+    color: var(--dark-blue);
+}
+
+li {
+    list-style: none;    
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hr-line {
+    height: 2px;
+    background-color: lightgrey;
+    border: none;
+    margin: 50px 0;
+}
+
+
+/* Header */
+
+.header {
+    background-color: var(--main-blue);
+}
+
+.header__logo {
+    padding-right: 100px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header-list {
+    height: 30px;
+
+    color: white;
+
+    display: flex;
+    flex-grow: 2;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header-list__item a {
+    border-bottom: 3px solid white;
+}
+
+.header-list__item a {
+    padding: 18px;
+}
+
+.header-list__item a:hover {
+    background-color: var(--light-blue);
+    height: 100%;
+}
+
+
+/* About me */
+
+.aboutme {
+    background-color: var(--light-blue);
+}
+
+.aboutme-wrapper {
+    color: white;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    min-height: 300px;
+}
+
+.aboutme-photo {
+    border-radius: 5%;
+    margin-right: 20px;
+}
+
+.aboutme-info__name {
+    font-weight: 500;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.aboutme-info p {
+    margin: 10px 0;
+    font-weight: lighter;
+}
+
+.aboutme-info__position {
+    text-transform: uppercase;
+    color: var(--main-blue);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+ /* Education */
+
+ .section-title {
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 32px;
+
+     margin-bottom: 12px;
+ }
+
+ .education-wrapper {
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .education-item h4 {
+    font-size: 24px;
+    margin: 10px 0;
+ }
+
+ .education-item p {
+    margin: 10px 0;
+ }
+
+ .education-item__year{
+    font-weight: lighter;
+    margin: 0;
+ }
+
+
+ /* Skills */
+
+ .skills p, h3{
+    text-align: center;
+    padding: 0 50px;
+ }
+
+ .skills-list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+ }
+
+ .skills-list__item {
+     width: 300px;
+     background-color: white;
+
+     box-shadow: 0 0.125rem 0.25rem rgb(228, 228, 228);
+ }
+
+ .skills-list__item ul {
+    position: relative;
+    line-height: 200%;
+    font-weight: lighter;
+    padding-left: 60px;
+}
+
+.skills-list__item li:before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+}
+
+ .skills-list__title {
+     text-align: center;
+ }
+
+
+/* Expireance */
+
+table {
+	border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+}
+
+table td {
+	padding: 15px;
+}
+
+table th {
+    padding: 15px;
+	background-color: var(--main-blue);
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid var(--main-blue);
+}
+
+table tbody td {
+	color: var(--dark-blue);
+	border: 1px solid var(--dark-blue);
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: white;
+}
+
+
+/* Clients */
+
+.clients {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.clients img:hover {
+    opacity: 0.5;
+}
+
+
+/* Contact form */
+
+.contactme_title {
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark-blue);
+}
+
+.contactme_form {
+    width: 600px;
+    margin: 0 auto;
+
+    font-weight: lighter;
+}
+
+.contactme_form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactme_form textarea{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+
+.contactme_form__button {
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+
+    margin: 0 auto;
+    padding: 15px 100px;
+}
+
+.contactme_form__button:hover {
+    background-color: var(--light-blue);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--main-blue);
+    color: white;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
