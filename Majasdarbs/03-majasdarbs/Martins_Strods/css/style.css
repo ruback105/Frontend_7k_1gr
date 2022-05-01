@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+body {
+    font-family: 'Goldman', cursive;
+    background-image: url("background.jpg");
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    position: relative;
+    background-color: rgb(2, 49, 56);
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    
+
+}
+
+nav a {
+    font-size: 1,5rem;
+}
+
+.nav-item a {
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+
+
+.nav-item:hover a {
+    color: rgb(84, 84, 84);
+  }
+
+
+
+  .nav-links {
+    display: flex;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
