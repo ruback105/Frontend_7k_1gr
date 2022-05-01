@@ -1,0 +1,10 @@
+@media screen and (max-width: 650px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        padding-top: 170px;
+    }
+}
