@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <header>
+            
+        <nav class="nav-fixed">
+            <h1 class="nav-logo">KristersG</h1>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#aboutme">About</a></li>
+                <li class="nav-item"><a href="#resume">Resume</a></li>
+                <li class="nav-item"><a href="#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ABOUT ME -->
+        <section id="aboutme">
+            <address>
+                <img class="svg-image" src="../Portfolio/images/Bgimage.svg" alt="Kiwi standing on oval">
+                <h1 class="big-heading">Kristers Gūtmanis - <span style="color: #75AFA5">Frontend</span> developer</h1>
+                <div class="header-elements-centered">
+                <button class="button-contact" onclick="window.location.href='#contact-me'">Contact me</button>
+            </div>
+            </address>
+        </section>
+        <!-- /ABOUT ME -->
+
+        <!-- WORK EXPERIENCE -->
+        <div class="background-container">
+        <div class="container-resume">
+        <section id="resume">
+            <h2 style="color: #3A5A6A;"> &lt; Work experience &gt;</h2>
+            <h3>Currently working.</h3>
+            <em>Jul 2018 - present</em>
+            <ul>
+                <li>Senior architect in architecture office - "Office name"</li>
+            </ul>
+
+            <h3>Previous work experience.</h3>
+            <em>Jun 2017 - Apr 2018</em>
+
+            <ul>
+            <li>Internship in an architecture office - "Office name".</li>
+            </ul>
+
+            <ul>
+                <em>Jun 2014 - Apr 2017</em>
+                <li>Freelancing as a 3D artist</li>
+                </ul>
+            <h2 style="color: #3A5A6A;"> &lt;/Work experience &gt;</h2>   
+            </section>
+                      </div>
+        <!-- /WORK EXPERIENCE -->
+
+        
+        <!-- EDUCATION -->
+        <div class="container-resume">
+        <section>
+            <h2 style="color: #3A5A6A;"> &lt; Education &gt;</h2>
+            <p>Rīgas Celtniecības koledža. <em>2016 – 2018</em></p>
+            <p>Liepājas Dizaina un Mākslas vidusskola. <em>2010 – 2014</em></p>
+            <h2 style="color: #3A5A6A;"> &lt;/Education &gt;</h2>
+        </section>
+        <!-- EDUCATION -->
+         <!-- FAQ -->
+         <section>
+             <div class="faq-container">
+            <h2 style="color: #3A5A6A;"> &lt; FAQ &gt;</h2>
+            <details>
+                <summary>My hobbyies?</summary>
+                <ul>
+                    <li>Brazilian jiu jitsu</li>
+                    <li>Art</li>
+                </ul>
+              </details>
+              <details>
+              <summary>Languages</summary>
+                <ul>
+                    <li>Latvian (native)</li>    
+                    <li>English (working Professional)</li>  
+                </ul>
+            </details>
+              <details>
+                <summary>My favorite playlist</summary>
+                <br>
+                <iframe 
+                    src="https://open.spotify.com/embed/playlist/16gXsmg48MdRTqCLNnx9Cu?utm_source=generator" 
+                    width="100%" 
+                    height="80px" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+              </details>
+              <h2 style="color: #3A5A6A;"> &lt;/FAQ &gt;</h2>
+            </div>
+        </section>
+        
+    </div>
+ 
+        <!-- SKILLS -->
+        <div class="container-resume">
+        <section>
+            <h2 style="color: #3A5A6A;"> &lt; Skills &gt;</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Git</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+            <h2 style="color: #3A5A6A;"> &lt;/Skills &gt;</h2>
+        </section>
+    </div>
+        <!-- SKIllS -->
+    </div>
+       
+        <!-- CONTACT FORM -->
+        <section id="contact-me">
+            <div class="flex-container">
+            <h2>Contact me </h2>
+
+            <form action="action_page.php">
+                <input class="input-text" type="text" id="firstname" name="firstname" placeholder="Your name..">
+             
+
+                <input class="input-text" type="text" id="company" name="lastname" placeholder="Company name..">
+            
+            
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <div class="button-container">
+                <button onclick="alert('Forma nosūtīta')" class="contact-form-button" type="submit" >Submit </button>   
+            </div>        
+              </form>
+            </div>
+        </section>
+        <!-- CONTACT FORM -->
+    </main>
+
+    <!-- Code for changing navbar color -->
+    <script>const navbar = document.querySelector('.nav-fixed')
+
+        window.onscroll = function() {
+        
+          // pageYOffset or scrollY
+          if (window.pageYOffset > 0) {
+            navbar.classList.add('scrolled')
+          } else {
+            navbar.classList.remove('scrolled')
+          }
+        }</script>
+</body>
+</html>
