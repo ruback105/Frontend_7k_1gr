@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+section {
+    padding: 50px;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: auto;
+  }
+  hr{
+    max-width: 900px;
+  }
+  address{
+    max-width: 900px;
+  }
+  body {
+    background-color: #252422;
+    color: rgb(189, 189, 189);
+    font-family: Consolas,monaco,monospace;
+    margin: auto;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: normal;
+  }
+  #hero-title-name{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    flex-wrap: nowrap;
+    text-align: left;
+    display: flex;
+    margin: 0;
+    color: #fff;
+  }
+  #hero-title-position{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 300%;
+    flex-wrap: nowrap;
+    text-align: left;
+    display: flex;
+    margin: 0;
+    color: rgb(189, 189, 189);
+  }
+  #aboutme{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #right-container{
+    width: 50%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-decoration: underline;
+  }
+  
+  /* HOVERS */
+  #right-container a:hover,
+  header a:hover{
+    color: #a72f00;
+  }
+  #left-container svg:hover{
+    fill: #a72f00;
+  }
+  /* /HOVERS */
+  #left-container{
+    width: 50%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  #social-icons{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: auto;
+    padding:  0;
+    width: 100%;
+  }
+  #social-icons a{
+    padding-right: 30px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  a {
+    text-decoration: none;
+    color: #eb5e28;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  header ul {
+    display: flex;
+    padding-right: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  header{
+    position: sticky;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: auto;
+    height: 75px;
+    background-color: #0e0d0d;
+  }
+
+  header nav,
+  header nav ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 950px;
+    width: 100%;
+    margin: 25px;
+  }
+  textarea{
+    background-color: #272727;
+    border: 3px solid rgb(189, 189, 189);
+    font-size: 25px;
+    width: 99%;
+    height: 100px;
+    color: rgb(189, 189, 189);
+  }
+  form{
+    width: 100%;
+  }
+  #contact-me input{
+    background-color: #272727;
+    border: 3px solid rgb(189, 189, 189);
+    font-size: 25px;
+    font-family: monospace;
+    color: rgb(189, 189, 189)
+  }
+  #contact-me button{
+    color: rgb(189, 189, 189);
+  }

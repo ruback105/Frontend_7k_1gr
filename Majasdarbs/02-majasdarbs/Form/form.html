@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reģistracijas forma</title>
+  </head>
+  <body>
+    <h2>Reģistrācijas forma</h2>
+    <!-- form -->
+    <form action="" method="get">
+      <fieldset>
+        <label for="name">Ievadiet vārdu:</label>
+        <input type="text" name="name" id="name" required />
+        <label for="password">Ievadiet paroli:</label>
+        <input type="password" name="password" id="password" required />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Informācija par sevi:</legend>
+        <h3>Dzimums</h3>
+        <div style="display: block">
+          <input type="radio" id="sex-man" name="sex-selector" /><label
+            for="sex-man"
+            >vīrietis</label
+          >
+        </div>
+        <div style="display: block">
+          <input type="radio" id="sex-woman" name="sex-selector" /><label
+            for="sex-woman"
+            >sieviete</label
+          >
+        </div>
+        <br />
+        <label for="birth-date">Dzimšanas datums </label
+        ><input type="date" id="birth-date" />
+        <h3>Adrese</h3>
+        <label for="city-select">Jūsu dzīvesvieta:</label>
+        <select name="city-select" id="city-select">
+          <option value="Riga">Riga</option>
+          <option value="Jelgava">Jelgava</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Jūsu hobiji</legend>
+        <p>Jūs varat izvēlēties jebkuru hobiju skaitu</p>
+          <table>
+                <tr>
+                    <td> <input type="checkbox" id="reading" name="reading" />
+                    <label for="reading">Lasīšana</label></td>
+                    <td><input type="checkbox" id="travel" name="travel" />
+                    <label for="travel">Ceļošana</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="singing" name="singing" />
+                    <label for="singing">Dziedāšana</label></td>
+                    <td><input type="checkbox" id="coding" name="coding" />
+                    <label for="coding">Programmēšana</label></td>
+                </tr>
+                    </tbody>
+            </table>
+      </fieldset>
+      <br />
+      <Fieldset>
+          <legend>Īss apraksts par tevi:</legend>
+          <textarea name="about-u" id="about-u" cols="30" rows="4"></textarea>
+      </Fieldset>
+      <fieldset>
+          <legend>Labākā auto firma</legend>
+          <input type="radio" id="volvo" name="car-selector" disabled/><label
+            for="volvo"
+            >Volvo</label>
+          <input type="radio" id="bmw" name="car-selector" /><label
+            for="volvo"
+            >BMW</label>
+          <input type="radio" id="audi" name="car-selector" disabled/><label
+            for="volvo"
+            >Audi</label>
+        </fieldset>
+    <br>
+        <button type="submit">Sūtīt</button>
+    <br />
+    </form>
+    <!-- /form -->
+  </body>
+</html>
