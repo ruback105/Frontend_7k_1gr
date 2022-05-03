@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="#" method="get" accept-charset="UTF-8">
+        <fieldset>
+            <label for="name">Your name:
+                <input type="text" id="name" name="name" placeholder="Genadijs Zuravlovs">
+            </label>
+            <label for="password" class="password">Your password:
+                <input type="password" id="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Information about me</legend>
+            <h4>Dzimums</h4>
+            <div>
+                <label for="male"><input type="radio" name="gender" id="male" value="male">Male</label>
+            </div>
+            <div>
+                <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
+            </div>
+            <br>
+            <label for="date">Birthday date:
+                <input type="date" name="date" id="date">
+            </label>
+            <br>
+            <h4>Address</h4>
+            <label for="city">Choose you city:</label>
+                <input list="cities" id="city" name="city" placeholder="Riga">
+                <datalist  id="cities">
+                    <option value="Riga">
+                    <option value="Jurmala"> 
+                    <option value="Jelgava">
+                    <option value="New York">
+                    <option value="Budapest">
+                    <option value="Vilnius">
+                </datalist>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>My hobbies</legend>
+            <p>You can choose multiple options</p>
+            <table>
+                <tr>
+                    <td>
+                        <label for="travel" class="checkbox">
+                            <input type="checkbox" id="travel"  name="travel">Travel
+                        </label>
+                    </td>
+                    <td>
+                        <label for="programming" class="checkbox">
+                            <input type="checkbox" id="programming"  name="programming">Programming
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="draw" class="checkbox">
+                            <input type="checkbox" id="draw"  name="draw">Drawing
+                        </label>
+                    </td>
+                    <td>
+                        <label for="music" class="checkbox">
+                            <input type="checkbox" id="music"  name="music">Playing musical instruments
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Skills and bio</legend>
+            <h4>Skills</h4>
+            <label for="skills">Choose skills (can be multiple choice):</label>
+            <br></br>
+            <select name="skills" id="skills" size="11" multiple>
+                <optgroup label="IT skills">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                </optgroup>
+                <optgroup label="Languages">
+                    <option value="russian">Russian</option>
+                    <option value="english">English</option>
+                    <option value="latvian">Latvian</option>
+                    <option value="danish">Danish</option>
+                    <option value="chinese">Chinese</option>
+                </optgroup>
+            </select>
+            <br><br><hr>
+            <h4>Bio</h4>
+            <label for="bio">Write your bio (max. 200 character):</label>
+            <br><br>
+            <textarea name="bio" id="bio" cols="50" rows="5" maxlength="200" placeholder="I am..."></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+    max-width: 780px;
+    padding-bottom: 50px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+ }
+
+ textarea {
+     max-width: 400px;
+     max-height: 150px;
+ }
+
+ legend {
+     background-color: yellow;
+ }
+
+ p {
+     margin-left: 20px;
+ }
+
+ select {
+     overflow: auto;
+     width: 150px;
+ }
+ .password {
+     margin-left: 10px;
+ }
