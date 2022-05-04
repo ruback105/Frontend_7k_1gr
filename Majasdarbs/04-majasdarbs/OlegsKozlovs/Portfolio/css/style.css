@@ -1,0 +1,71 @@
+/* HEADER START */
+
+header nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    height: 50px;
+    width: 100%;  
+}
+
+header nav ul > li {
+    width: 270px;
+    padding: 15px 50px;
+}
+
+header nav ul > li:hover {
+    background-color: rgb(132, 235, 235);
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rebeccapurple;
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+main ul {
+    padding: 10px 0px 15px 30px;
+}
+
+main li {
+    list-style: disc;
+} 
+
+/* MAIN END */
+
+/* ABOUT ME START */
+
+#aboutme {
+    padding: 80px 50px 50px 50px;  
+}
+
+#aboutme address a {
+    color: -webkit-link;
+    text-decoration: underline;
+}
+
+/* ABOUT ME END */
+
+/* CONTACT FORM START */
+
+input[type="submit"] {
+    background-color: lightblue;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    cursor: grab;
+}
+
+/* CONTACT FORM END */
