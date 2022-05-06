@@ -1,9 +1,13 @@
+body {
+    height: 100%;
+}
+
 .container {
     margin-top: 100px;
     border-style: solid;
 }
 
-.container .row, .col-sm-12 {
+.col-sm-12 {
     height: 100px;
 }
 
