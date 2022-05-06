@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "responsive.css";
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Roboto', 'Arial', 'sans-serif'; 
+    font-size: 16px;
 }
 
 /* Navigation bar >>>>>>>>>>>>>>>>>>>>>*/
@@ -16,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: white;
-    font-size: 20px;
+    font-size: 16px;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -68,20 +69,24 @@ body {
 }
 
 /* MAIN Text part >>>>>>>>>>>>>>>>>>>>>>>>> */
-.main-txt {
+.main-content {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
     width: 70%;
 }
 
-.main-txt h2 {
+.main-content h2 {
     text-transform: uppercase;
     padding-bottom: 1rem;
 }
 
+.main-content ul {
+    padding-left: 40px;
+}
+
 /* WORK EXPERIENCE */
-#work-exp {
+#work-experience {
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -89,7 +94,7 @@ body {
     border-bottom: 2px solid rgb(53, 53, 53);
 }
 
-#work-exp h3 {
+#work-experience h3 {
     padding-top: 1rem;
 }
 
@@ -146,4 +151,51 @@ body {
 .icon {
     padding: 5px;
     margin: 5px;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    #about-me {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #about-me a{
+        visibility: visible;
+    }
+    
+    #about-me:hover svg,
+    #about-me:hover h1 
+    {
+        visibility: visible;
+    }
+
+    #about-me:hover a {
+        visibility: visible;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgba(128, 128, 128, 0);
+    }
+    
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .nav-bar a:hover {
+        padding: 0.5rem;
+    }
+
+    .container {
+        padding-top: 110px;
+    }
+
+    #about-me {
+        background-image: url(../img/mobile-background.jpg);
+    }
 }
