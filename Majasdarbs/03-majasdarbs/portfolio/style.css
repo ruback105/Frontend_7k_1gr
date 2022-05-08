@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 1s ease;
+}
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 100px white;
+}
+
+/* Home */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 840px;
+  justify-content: center;
+  color: white;
+  align-items: center;
+
+  
+
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("nauris-home1.jpg") no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+.main{
+    display:inline;
+    align-items: left;
+    position: absolute;
+    top:40%;
+    left:15%
+
+}
+.headings{
+    font-size: 3rem;
+    font-family: century;
+    text-align: left;
+    margin: 40px 50px;
+}
+
+
+/* about me */
+.heading-about-me {
+    font-size: 3rem;
+    font-family: century;
+    text-align: center;
+    margin: 10px 10px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px ;
+    margin-bottom: 50px;
+}
+
+#pic{
+    display: flex;
+}
+#pic img{
+    width:400px;
+    height: 400px;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.about-me-text{
+    font-size: 1.2rem;
+}
