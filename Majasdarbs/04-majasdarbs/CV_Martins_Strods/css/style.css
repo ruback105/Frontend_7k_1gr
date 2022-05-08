@@ -43,14 +43,35 @@ nav a {
 
 
 
-  .nav-links {
+.nav-links {
     display: flex;
     margin-right: 20px;
     padding-right: 20px;
 }
 
+.logo {
+    margin: 10px;
+}
 
+@media only screen and (max-width: 512px) {
+body {
+    background-image: url('img_small.jpg');
+    }
+  
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+.nav-bar {
+    display: flex;
+    position: relative;
+    background-color: rgb(2, 49, 56);
+    height: 160px;
+    width: 100%;
+    align-items: center;
+    
 
-
-
-
+}
+}
