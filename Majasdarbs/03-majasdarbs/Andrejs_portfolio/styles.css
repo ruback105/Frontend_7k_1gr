@@ -1,0 +1,36 @@
+body {
+    font-family: 'Montserrat';
+    color:aliceblue
+}
+
+h1 {
+    font-size: 240%;
+ }
+
+ img {
+    border: 3px solid aliceblue;
+    border-radius: 100%;
+  }
+
+.nav-list {
+    padding: 1rem 0;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+    font-size: 160%;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color:aliceblue
+}
+
+.nav-item a:hover {
+    color:rgb(23, 69, 126);
+    transition:all 200ms ease-in;
+}
