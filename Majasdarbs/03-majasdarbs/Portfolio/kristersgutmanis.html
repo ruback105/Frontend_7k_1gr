@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   
@@ -25,8 +25,11 @@
         <!-- ABOUT ME -->
         <section id="aboutme">
             <address>
-                <img class="svg-image" src="../Portfolio/images/Bgimage.svg" alt="Kiwi standing on oval">
-                <h1 class="big-heading">Kristers Gūtmanis - <span style="color: #75AFA5">Frontend</span> developer</h1>
+                <picture>
+                <source media="(max-width: 375px)" srcset="../Portfolio/images/mediaimage.svg" loading="lazy" alt="coder">
+                <img class="svg-image" src="../Portfolio/images/Bgimage.svg" loading="lazy" alt="programmer">
+            </picture>
+                <h1 class="big-heading">Kristers Gūtmanis<span class="span-color"">Frontend</span>developer</h1>
                 <div class="header-elements-centered">
                 <button class="button-contact" onclick="window.location.href='#contact-me'">Contact me</button>
             </div>
@@ -38,7 +41,7 @@
         <div class="background-container">
         <div class="container-resume">
         <section id="resume">
-            <h2 style="color: #3A5A6A;"> &lt; Work experience &gt;</h2>
+            <h2 class="resume-heading"> &lt; Work experience &gt;</h2>
             <h3>Currently working.</h3>
             <em>Jul 2018 - present</em>
             <ul>
@@ -56,7 +59,7 @@
                 <em>Jun 2014 - Apr 2017</em>
                 <li>Freelancing as a 3D artist</li>
                 </ul>
-            <h2 style="color: #3A5A6A;"> &lt;/Work experience &gt;</h2>   
+            <h2 class="resume-heading"> &lt;/Work experience &gt;</h2>   
             </section>
                       </div>
         <!-- /WORK EXPERIENCE -->
@@ -65,16 +68,16 @@
         <!-- EDUCATION -->
         <div class="container-resume">
         <section>
-            <h2 style="color: #3A5A6A;"> &lt; Education &gt;</h2>
+            <h2 class="resume-heading"> &lt; Education &gt;</h2>
             <p>Rīgas Celtniecības koledža. <em>2016 – 2018</em></p>
             <p>Liepājas Dizaina un Mākslas vidusskola. <em>2010 – 2014</em></p>
-            <h2 style="color: #3A5A6A;"> &lt;/Education &gt;</h2>
+            <h2 class="resume-heading"> &lt;/Education &gt;</h2>
         </section>
         <!-- EDUCATION -->
          <!-- FAQ -->
          <section>
              <div class="faq-container">
-            <h2 style="color: #3A5A6A;"> &lt; FAQ &gt;</h2>
+            <h2 class="resume-heading"> &lt; FAQ &gt;</h2>
             <details>
                 <summary>My hobbyies?</summary>
                 <ul>
@@ -101,7 +104,7 @@
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                 </iframe>
               </details>
-              <h2 style="color: #3A5A6A;"> &lt;/FAQ &gt;</h2>
+              <h2 class="resume-heading"> &lt;/FAQ &gt;</h2>
             </div>
         </section>
         
@@ -110,7 +113,7 @@
         <!-- SKILLS -->
         <div class="container-resume">
         <section>
-            <h2 style="color: #3A5A6A;"> &lt; Skills &gt;</h2>
+            <h2 class="resume-heading"> &lt; Skills &gt;</h2>
             <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -122,7 +125,7 @@
                 <li>Tailwind CSS</li>
                 <li>Adobe Photoshop</li>
             </ul>
-            <h2 style="color: #3A5A6A;"> &lt;/Skills &gt;</h2>
+            <h2 class="resume-heading""> &lt;/Skills &gt;</h2>
         </section>
     </div>
         <!-- SKIllS -->
@@ -131,7 +134,7 @@
         <!-- CONTACT FORM -->
         <section id="contact-me">
             <div class="flex-container">
-            <h2>Contact me </h2>
+            <h2 class="contact-heading">Contact me </h2>
 
             <form action="action_page.php">
                 <input class="input-text" type="text" id="firstname" name="firstname" placeholder="Your name..">
