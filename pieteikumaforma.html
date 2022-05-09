@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+<meta http-equiv="Content-Language" content="lv">
+<meta content="text/html; charset=windows-1257" http-equiv="Content-Type">
+<title>Mana pieteikuma forma</title>
+<meta name="keywords" content="vārds, uzvārds, aizraušanās, prasmes, zināšanas">
+<meta name="description" content="Mājas darbs Nr2. Mana pieteikuma forma">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<meta name="Distribution" content="Global">
+<script language="JavaScript" type="text/javascript">
+   WebFontConfig = {
+     google: { families: [ 'Andika::latin-ext',  'Roboto+Slab:400,700:latin-ext', 'Roboto:400,900,500:latin-ext' ] }
+   };
+   (function() {
+     var wf = document.createElement('script');
+     wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+       '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+     wf.type = 'text/javascript';
+     wf.async = 'true';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(wf, s);
+   })(); </script>
+<style type="text/css">
+span.h1 {
+	font-family: Roboto;
+	font-size: 1.5em;  /* 24px; */
+	font-weight: 900;
+	color: #660033;
+	text-decoration: none;
+	vertical-align: baseline;
+	line-height: 150%;
+	word-spacing: 0;
+	text-indent: 0;
+	text-align: center;
+	margin: 2 0;
+	; letter-spacing: 1;
+	text-shadow: 6px 6px 6px #aaa;
+}
+
+span.h2 {
+	font-family: Laila;
+	font-size: 1.125em;   /* 18px;  */ 
+	font-weight: 700;
+	color: #CC0000;
+	text-align: center;
+	text-indent: 0;
+	line-height: 100%;
+	word-spacing: 0;
+	margin: 0;
+}
+
+span.h3 {
+	font-family: Andika;
+	font-size: 1em;
+	font-weight: 400;
+	color: #660033;
+	vertical-align: baseline;
+	letter-spacing: 0;
+	text-indent: 20;
+	line-height: 100%;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+a:active {
+	color: #990033;
+	letter-spacing:.05em;
+	text-decoration: none;
+}
+
+a:hover {
+	letter-spacing:.05em;
+	color: #CC0000;
+	text-decoration: none;
+}
+
+a:link {
+	color: #990033;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #990033;
+	text-decoration: none;
+}
+
+	</style>
+
+
+	</head>
+	<div class="header">
+	<p align="center">
+	<span class="h1">
+Pieteikuma forma
+	</span>
+    </p>
+    </div>
+    <form action="/action_page.php" method="post" target="_blank">
+	<fieldset>
+	<legend>Pierakstīties</legend>
+    <label for="name" class="name">
+    <span class="h2">
+Lietotājvārds:
+	</span>
+    <input type="text" id="name" name="name" placeholder="Arnis">
+    </label>
+    <label for="password" class="password">
+    <span class="h2">
+Parole
+	</span>
+    <input type="password" id="password" name="password" placeholder="xxx">
+    </label>
+    </fieldset>
+    <p align="center">
+	<span class="h1">
+Mani dati
+	</span>
+	</p>
+	<fieldset>
+	<legend>Personas dati</legend>
+	<span class="h2">
+Dzimums
+	</span>
+	<label for="male">
+	<input type="radio" name="gender" id="male" value="male">
+	<span class="h3">
+Vīrietis
+	</span>
+	</label>
+	<label for="female">
+	<input type="radio" name="gender" id="female" value="female">
+	<span class="h3">
+Sieviete
+	</span>
+	</label>
+	<br><br>
+	<label for="date">
+	<span class="h2">
+Dzimšanas diena&nbsp;&nbsp;
+	</span>
+	<input type="date" name="date" id="date">
+    </label>
+	</fieldset>
+	<p align="center">       
+    <span class="h1">
+Adrese
+	</span>
+	</p>
+	<fieldset>
+	<legend>Atrašanās pilsēta</legend>
+	<label for="city">
+	<span class="h2">
+Izvēlies pilsētu
+	</span>
+	</label>
+    <input list="cities" id="city" name="city" placeholder="Riga">
+		<datalist  id="city">
+		<option value="Riga">
+		<option value="Lisabona"> 
+		<option value="Porto">
+		<option value="Braga">
+		<option value="Viana do Castelo">
+		<option value="	Vila Nova de Gaia">
+		</datalist>
+    </fieldset>
+	<p align="center">       
+    <span class="h1">
+Manas aizraušanās
+	</span>
+	</p>
+    <fieldset>
+    <legend>Brīvais laiks</legend>
+    <span class="h2">
+Var izvēlēties vairākus variantus
+    </span>
+   	<table>
+    <tr>
+    <td>
+    <label class="checkbox">
+    <input type="checkbox" id="a"  name="a">
+	<span class="h3">
+Ceļošana
+	</span>
+	</label>
+	</td>
+	<td>
+    <label class="checkbox">
+    <input type="checkbox" id="b"  name="b">
+	<span class="h3">
+Trekings un kalnos kāpšana
+	</span>
+    </label>
+    </td>
+	<td>
+    <label class="checkbox">
+    <input type="checkbox" id="c"  name="c">
+	<span class="h3">
+Braukšana ar motociklu
+	</span>
+    </label>
+    </td>
+    <td>
+    <label class="checkbox">
+    <input type="checkbox" id="d"  name="d">
+	<span class="h3">
+Sērfings
+	</span>
+    </label>
+    </td>
+    <td>
+    <label class="checkbox">
+    <input type="checkbox" id="e"  name="e">
+	<span class="h3">
+Pasākumu rīkošana
+	</span>
+     </label>
+     </td>
+     <td>
+     </tr>
+	</table>
+	<br>
+    <label for="cits">
+    <span class="h3">
+Citas aizraušanās
+	</span>
+	</label>
+    <input type="text" id="cits" name="cits" placeholder="citas aizraušanās">
+	</fieldset>
+	<p align="center">       
+    <span class="h1">
+Manas prasmes
+	</span>
+	</p>
+	<fieldset>
+	 <legend>Nodarbošanās</legend>
+    <label for="prasmes">
+    <span class="h2">
+Prasmes (iespējams izvēlēties dažādas)
+	</span>
+	</label>
+    <br>
+    <select name="prasmes" id="prasmes" size="15">
+		<optgroup label="MĀKSLA">
+		<option value="1">Stājglezniecība </option>
+        <option value="2">Grafika</option>
+        <option value="3">Vides māksla</option>
+        <option value="4">Datorgrafika</option>
+        </optgroup>
+        <optgroup label="VALODAS">
+        <option value="1">Latviešu</option>
+        <option value="2">Angļu</option>
+        <option value="3">Krievu</option>
+        <option value="4">Portugāļu</option>
+        </optgroup>
+        </select>
+    </fieldset>
+    </p>
+    <p align="center">       
+    <span class="h1">
+Biogāfija
+	</span>
+	</p>
+	<p align="left">
+	<label for="bio">
+	<span class="h2">
+Mana biogrāfija (ne vairāk kā 200 zīmes):
+	</span>
+	</label>
+	<br>
+    <textarea name="bio" id="bio" cols="50" rows="5" maxlength="200" placeholder="Es...">
+    </textarea>
+    </p>
+	<input type="submit" value="SŪTĪT">
+	</form>
+ 	<hr color="#990033" width="90%" size="4">
+ 	<div class="footer">
+ 	<p align="center" style="line-height: 150%; margin-top: 0; margin-bottom: 0">
+
+			<span class="h3">
+			Lapa atjaunota:&nbsp;
+			<!--webbot bot="Timestamp" s-type="EDITED" s-format="%d/%m/%y" startspan -->09/05/22<!--webbot bot="Timestamp" i-checksum="12686" endspan -->&nbsp; © PortoART 2022.
+	
+	</span>
+	
+	</p>
+	</div>
+	</body>
+	</html>
