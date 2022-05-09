@@ -1,0 +1,11 @@
+
+
+@media only screen and (max-width: 320px) {
+    #aboutme {
+        background-color: red;
+    }
+
+    .background-container{
+        background-color: red;
+    }
+  }
