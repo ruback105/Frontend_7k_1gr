@@ -1,0 +1,126 @@
+@media only screen and (max-width: 980px) {
+    .container {
+        max-width: 920px;        
+     }
+
+    .skills-list {
+        justify-content: center;    
+     }
+
+    .clients {
+        justify-content:center;
+    }
+
+    .clients img{
+        max-width: 120px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .header-list__item a {
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .container {
+        max-width: 680px;        
+     }
+
+    .contactme_form__wrapper > div {
+        margin-top: 15px;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .menu-hamburger {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+    }
+
+    .menu-hamburger:before,
+    .menu-hamburger:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+    }
+
+    .menu-hamburger::before {
+        transform: translateY(-12px);
+    }
+
+    .menu-hamburger::after {
+        transform: translateY(12px);
+    }
+
+    .aboutme-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutme-photo {
+        margin-right: 0;
+    }
+
+    .aboutme-info__name {
+        font-size: 32px;
+        margin-left: 10px;
+    }
+    
+    .aboutme-info p {
+        font-size: 14px;
+    }
+
+    .aboutme-info__greeting,
+    .aboutme-info__name {
+        display: inline;
+    }
+ 
+    .aboutme-info__position {
+        display: block;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 440px;        
+     }
+
+     .section-title {
+        font-size: 18px;
+    }
+
+    .table {
+        font-size: 10px;
+    }
+
+    .contactme_form__wrapper {
+        justify-content: center;
+    }
+
+    .contactme_form__button {
+        padding: 10px 80px;
+    }
+}

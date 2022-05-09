@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Front-End Developer</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/css.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav container">
+
+      <a class="header__logo" href="sergejs-vasjkvos.html">
+        <img width="70" height="50" src="img/logo.svg" alt="John Doe logo, home page button">
+      </a>
+
+      <ul class="header-list">
+        <li class="header-list__item"><a href="#about-me">About me</a></li>
+        <li class="header-list__item"><a href="#career">Skills</a></li>
+        <li class="header-list__item"><a href="#work-experience">Work experience</a></li>
+        <li class="header-list__item"><a href="#contact-me">Contact me</a></li>
+      </ul>
+
+      <div class='menu-hamburger'></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About me -->
+    <section id="about-me" class="aboutme">
+      <div class="container aboutme-wrapper">
+        <picture>
+          <source media="(max-width:720px)" srcset="img/profile-foto_small.jpg" width="150" height="150">
+          <img class="aboutme-photo" src="img/profile-foto.jpg" alt="Jonh Doe photo" width="200" height="200">
+        </picture>
+
+        <div class="aboutme-info">
+          <p class="aboutme-info__greeting">Hello, my name is</p>
+          <h1 class="aboutme-info__name">John Doe</h1>
+          <span class="aboutme-info__position">Full Stack Developer</span>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores cum quae minus totam? Officia saepe quos
+            earum, at eum delectus voluptatibus perferendis voluptas consequuntur hic maxime explicabo est magnam
+            consectetur inventore. Aliquid quisquam quia accusantium similique neque labore.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /About me -->
+
+    <!-- Education -->
+    <section id="education" class="education container">
+      <h3 class="section-title">Education</h3>
+      <div class="education-wrapper">
+        <div class="education-item">
+          <h4>MSc in Computer Science</h4>
+          <p>University College London</p>
+          <p class="education-item__year">2015 - 2019</p>
+        </div>
+
+        <div class="education-item">
+          <h4>BSc Maths and Physics</h4>
+          <p>Imperial College London</p>
+          <p class="education-item__year">2007 - 2010</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- /Education -->
+
+    <!-- Skills -->
+    <hr class="hr-line">
+    <section id="career" class="skills container">
+      <h3 class="section-title">Career summary</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quo id temporibus quos, modi eos dicta ea
+        laboriosam in fugiat quae, nulla, aspernatur placeat eveniet provident. Delectus saepe quidem eius dolorum
+        facilis libero, rerum ex!</p>
+      <h3>Skills Overview</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta dolorem magni sapiente deserunt quisquam
+        tempora ducimus ex aperiam harum necessitatibus, tenetur eius. Deleniti repellendus neque, dolor sequi in id
+        quod.</p>
+
+      <div class="skills-list">
+        <div class="skills-list__item">
+          <h4 class="skills-list__title">Frontend</h4>
+          <ul>
+            <li>React/Redux/Angular</li>
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Webpack/Gulp/Grunt</li>
+            <li>HTML/CSS/SASS/LESS</li>
+          </ul>
+          <div class="skills-list__icon">
+            <img src="img/frontend-icon.svg" alt="Frontend icon">
+          </div>
+        </div>
+
+        <div class="skills-list__item">
+          <H4 class="skills-list__title">Backend</H4>
+          <ul>
+            <li>Python/Django</li>
+            <li>Ruby/Rails</li>
+            <li>PHP</li>
+            <li>PostgresSQL/MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+          <div class="skills-list__icon">
+            <img src="img/backend-icon.svg" alt="Frontend icon">
+          </div>
+        </div>
+
+        <div class="skills-list__item">
+          <H4 class="skills-list__title">Others</H4>
+          <ul>
+            <li>DevOps</li>
+            <li>Unit Testing</li>
+            <li>UX/Wireframing</li>
+            <li>Sketch/Balsamiq</li>
+            <li>Wordpress/Shopify</li>
+          </ul>
+          <div class="skills-list__icon">
+            <img src="img/other-skills-icon.svg" alt="Frontend icon">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Skills -->
+
+    <!-- Expireance -->
+    <hr class="hr-line">
+    <section id="work-experience" class="container">
+      <h3 class="section-title">Work experience</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google</td>
+            <td>Intern</td>
+            <td>2019</td>
+          </tr>
+          <tr>
+            <td>T-Systems</td>
+            <td>Junior Front-End developer</td>
+            <td>2019-2020</td>
+          </tr>
+          <tr>
+            <td>IT Group</td>
+            <td>Middle WEB developer</td>
+            <td>2020-2022</td>
+          </tr>
+          <tr>
+            <td>Spotify Technology</td>
+            <td>Senior Fullstack developer</td>
+            <td>2022 - now</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- /Expireance -->
+
+    <!-- Worked with -->
+    <hr class="hr-line">
+    <section class="container" id="worked-with">
+      <h3 class="section-title">Great clients I've worked with</h3>
+      <ul class="clients">
+        <li><a href="#"><img src="img/google.svg" loading="lazy" alt="Google" width="180"></a></li>
+        <li><a href="#"><img src="img/airbnb.svg" loading="lazy" alt="Airbnb" width="180"></a></li>
+        <li><a href="#"><img src="img/dropbox.svg" loading="lazy" alt="Dropbox" width="180"></a></li>
+        <li><a href="#"><img src="img/spotify.svg" loading="lazy" alt="Spotify" width="180"></a></li>
+      </ul>
+    </section>
+    <!-- /Worked with -->
+
+    <!-- Contact me -->
+    <hr class="hr-line">
+    <section id="contact-me" class="container">
+      <h3 class="section-title">Interested in hiring me for your project?</h3>
+      <h4 class="contactme_title">Get In Touch</h4>
+      <form action="someserver" method="get" id="contact-form" class="contactme_form">
+        <div class="contactme_form__wrapper">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required><br>
+          </div>
+          <textarea id="comments" name="comments" placeholder="Enter your message" required></textarea>
+          <button class="contactme_form__button">Send it</button>
+        </div>
+      </form>
+    </section>
+    <!-- /Contact me -->
+
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper  container">
+      <small class="footer__text">Copyright © 2022</small>
+      <div class="footer__social">
+        <a class="social-button" target="_blank" href="https://www.facebook.com/">
+          <svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.54149 8.28L7.95998 5.61602H5.34335V3.88729C5.34335 3.15847 5.70887 2.44806 6.88078 2.44806H8.07035V0.179975C8.07035 0.179975 6.99085 0 5.95873 0C3.80385 0 2.39532 1.27593 2.39532 3.5857V5.61602H0V8.28H2.39532V14.72H5.34335V8.28H7.54149Z" />
+          </svg>
+        </a>
+
+        <a class="social-button" target="_blank" href="https://www.instagram.com/">
+          <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.13897 3.68159C6.02383 3.68159 4.31774 5.38491 4.31774 7.49663C4.31774 9.60835 6.02383 11.3117 8.13897 11.3117C10.2541 11.3117 11.9602 9.60835 11.9602 7.49663C11.9602 5.38491 10.2541 3.68159 8.13897 3.68159ZM8.13897 9.9769C6.77211 9.9769 5.65467 8.8646 5.65467 7.49663C5.65467 6.12866 6.76878 5.01636 8.13897 5.01636C9.50915 5.01636 10.6233 6.12866 10.6233 7.49663C10.6233 8.8646 9.50583 9.9769 8.13897 9.9769ZM13.0078 3.52554C13.0078 4.02026 12.6087 4.41538 12.1165 4.41538C11.621 4.41538 11.2252 4.01694 11.2252 3.52554C11.2252 3.03413 11.6243 2.63569 12.1165 2.63569C12.6087 2.63569 13.0078 3.03413 13.0078 3.52554ZM15.5386 4.42866C15.4821 3.23667 15.2094 2.18081 14.3347 1.31089C13.4634 0.440967 12.4058 0.168701 11.2119 0.108936C9.9814 0.039209 6.29321 0.039209 5.0627 0.108936C3.8721 0.165381 2.81453 0.437646 1.93987 1.30757C1.06522 2.17749 0.795836 3.23335 0.735973 4.42534C0.666134 5.65386 0.666134 9.33608 0.735973 10.5646C0.79251 11.7566 1.06522 12.8124 1.93987 13.6824C2.81453 14.5523 3.86878 14.8246 5.0627 14.8843C6.29321 14.9541 9.9814 14.9541 11.2119 14.8843C12.4058 14.8279 13.4634 14.5556 14.3347 13.6824C15.2061 12.8124 15.4788 11.7566 15.5386 10.5646C15.6085 9.33608 15.6085 5.65718 15.5386 4.42866ZM13.949 11.8828C13.6895 12.5335 13.1874 13.0349 12.5322 13.2972C11.5511 13.6857 9.22314 13.596 8.13897 13.596C7.05479 13.596 4.72348 13.6824 3.74573 13.2972C3.09389 13.0382 2.59171 12.5369 2.32898 11.8828C1.93987 10.9033 2.02967 8.57905 2.02967 7.49663C2.02967 6.41421 1.9432 4.08667 2.32898 3.1105C2.58838 2.45972 3.09056 1.95835 3.74573 1.69604C4.7268 1.30757 7.05479 1.39722 8.13897 1.39722C9.22314 1.39722 11.5545 1.31089 12.5322 1.69604C13.184 1.95503 13.6862 2.4564 13.949 3.1105C14.3381 4.08999 14.2483 6.41421 14.2483 7.49663C14.2483 8.57905 14.3381 10.9066 13.949 11.8828Z" />
+          </svg>
+        </a>
+
+        <a class="social-button" target="_blank" href="https://www.pinterest.com/">
+          <svg width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.74032 0.203125C3.55564 0.203125 0.408203 2.34063 0.408203 5.8C0.408203 8 1.63738 9.25 2.38233 9.25C2.68963 9.25 2.86655 8.3875 2.86655 8.14375C2.86655 7.85313 2.13091 7.23438 2.13091 6.025C2.13091 3.5125 4.03055 1.73125 6.4889 1.73125C8.60271 1.73125 10.1671 2.94062 10.1671 5.1625C10.1671 6.82187 9.50597 9.93437 7.36422 9.93437C6.59133 9.93437 5.93018 9.37187 5.93018 8.56563C5.93018 7.38438 6.74963 6.24062 6.74963 5.02187C6.74963 2.95312 3.835 3.32812 3.835 5.82812C3.835 6.35313 3.90018 6.93437 4.13298 7.4125C3.70463 9.26875 2.82931 12.0344 2.82931 13.9469C2.82931 14.5375 2.91311 15.1188 2.96899 15.7094C3.07452 15.8281 3.02175 15.8156 3.18316 15.7563C4.74757 13.6 4.69169 13.1781 5.3994 10.3562C5.78119 11.0875 6.76826 11.4812 7.55046 11.4812C10.8469 11.4812 12.3275 8.24688 12.3275 5.33125C12.3275 2.22813 9.66427 0.203125 6.74032 0.203125Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
