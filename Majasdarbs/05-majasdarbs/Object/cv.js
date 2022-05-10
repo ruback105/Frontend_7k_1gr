@@ -1,18 +1,18 @@
-const VardsUzvards = {
+const Object = {
     name:"Kristers",
     surname:"Gūtmanis",
     age: "27",
     role: "Software Developer"
 };
 
-const name = VardsUzvards.name;
+const name = Object.name;
 console.log(name);
 
-const surname = VardsUzvards.surname;
+const surname = Object.surname;
 console.log(surname);
 
-const age = VardsUzvards.age;
+const age = Object.age;
 console.log(age);
 
-const role = VardsUzvards.role;
+const role = Object.role;
 console.log(role);
