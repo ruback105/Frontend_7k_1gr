@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-  
-    <header>
-            
+      <header>   
         <nav class="nav-fixed">
             <h1 class="nav-logo">KristersG</h1>
             <ul class="nav-links">
-                <li class="nav-item"><a href="#aboutme">About</a></li>
-                <li class="nav-item"><a href="#resume">Resume</a></li>
-                <li class="nav-item"><a href="#contact-me">Contact me</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact-me"class="nav-link">Contact me</a></li>
             </ul>
+            <div class="hamburger">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
         </nav>
     </header>
 
@@ -153,17 +156,7 @@
         <!-- CONTACT FORM -->
     </main>
 
-    <!-- Code for changing navbar color -->
-    <script>const navbar = document.querySelector('.nav-fixed')
 
-        window.onscroll = function() {
-        
-          // pageYOffset or scrollY
-          if (window.pageYOffset > 0) {
-            navbar.classList.add('scrolled')
-          } else {
-            navbar.classList.remove('scrolled')
-          }
-        }</script>
+        <script src="script.js"></script>
 </body>
 </html>

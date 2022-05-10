@@ -1,0 +1,20 @@
+
+.container {
+    margin-top: 100px;
+}
+
+.col-sm-12 {
+    height: 300px;
+}
+
+.container .row div:nth-child(1) {
+    background-color: red;
+}
+
+.container .row div:nth-child(2) {
+    background-color: yellow;
+}
+
+.container .row div:nth-child(3) {
+    background-color: green;
+}

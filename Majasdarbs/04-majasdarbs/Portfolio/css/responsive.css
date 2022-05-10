@@ -1,11 +1,101 @@
+ @media only screen and (max-width: 375px) {
 
-
-@media only screen and (max-width: 320px) {
-    #aboutme {
-        background-color: red;
+    .big-heading {
+        font-size: 2rem;
     }
 
-    .background-container{
-        background-color: red;
+    textarea {
+       height: 30vh;
     }
   }
+
+  @media only screen and (max-width: 620px) {
+   
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+    }
+    
+    .hamburger.active{
+        color: #fff;
+    }
+    
+
+    .nav-links{
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        width: 30%;
+        text-align: center;
+        transition: 0.3s;
+      }
+
+      .nav-links.active{
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.nav-links.active a{
+    color: #75AFA5;
+}
+
+.nav-links.active a:hover{
+    color: #fff;
+}
+
+
+    .nav-links {
+        display: block;
+    }
+    .no-margin {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button-contact {
+        font-size: 1rem;
+     }
+
+    .background-container{
+        flex-wrap: wrap;
+        background-color: #75AFA5;
+    }
+
+    .input-text {
+        height: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contact-heading{
+        font-size: 1.8rem;
+    }
+
+    textarea {
+    margin-top: 10px;
+}
+
+.background-container {
+    height: 100%;
+}
+
+.container-resume {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+
+.big-heading {
+    font-size: 2rem;
+    flex-direction: column;
+}
+   }
