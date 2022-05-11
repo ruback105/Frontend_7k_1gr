@@ -16,6 +16,7 @@ body {
 main {
     background-image: url(../img/background_dt.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section {
