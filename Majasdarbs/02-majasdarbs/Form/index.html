@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Reģistrācijas forma</h1>
+    <form>
+
+        <fieldset>
+            <form>
+                <label for="your-name">Ievietot vārdu:</label>
+                <input type="text" name="your-name" value="">
+
+                <label>Ievietot paroli:</label>
+                <input type="password" id="user-pw" name="user-pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Parolei jāiekļauj vismaz viens cipars, viens lielais burts un viens mazais burts un tai ir jābūt vismaz 8 simbolus garai.">
+
+            </form>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Informācija par sevi</legend>
+            <br>
+
+            <b>Dzimums</b>
+            <br>
+            <br>
+
+            <input type="radio" id="vīrietis" name="gender" value="vīrietis">
+            <label for="vīrietis">vīrietis</label>
+            <br>
+
+            <input type="radio" id="sieviete" name="gender" value="sieviete">
+            <label for="sieviete">sieviete</label>
+            <br>
+            <br>
+
+            <label>Dzimšanas datums</label>
+            <input type="date" id="dzimp" name="dzimp" min="1900-01-01" max="2022-05-01">
+            <br>
+            <br>
+
+            <b>Adrese</b>
+            <br>
+            <br>
+            <label for="city">Jūsu pilsēta</label>
+            <select id="city" name="city">
+            <option value="rīga">Rīga</option>
+            <option value="jelgava">Jelgava</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+
+            <legend>Jūsu hobiji</legend>
+
+            <span>Jūs varat atzīmēt vairākus hobijus</span>
+            <br>
+
+            <input id="celojumi" name="hobiji" type="checkbox" value="celojumi">
+            <label for="celojumi">Ceļošana</label>
+            
+            <input id="programming" name="hobiji" type="checkbox" value="programming">
+            <label for="programming">Programmēšana</label>
+            <br>
+
+            <input id="drawing" name="hobiji" type="checkbox" value="drawing">
+            <label for="drawing">Zīmēšana</label>
+
+            <input id="music" name="hobiji" type="checkbox" value="music">
+            <label for="music">Mūzikas instrumenta spēlēšana</label>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Profesijas maiņa</legend>
+            
+            <label for="volume">Tava morālā gatavība kļūt par programmētāju</label>
+            <input id="volume" name="volume" type="range" min="0" max="100" step="10">
+
+        </fieldset>
+        <br>
+
+        <input type="submit">
+        
+    </form>
+
+</body>
+
+</html>
