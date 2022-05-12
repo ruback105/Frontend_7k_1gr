@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    #header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: space-between;
+        color: black;
+        left: 0px;
+        right: 0px;
+        height: 20px;
+        width: 100%;
+      } 
+      
+      #header nav ul li:hover {
+        display: flex;
+        font-size: large;
+        background-color: darkgray;
+      }
+      .container {
+        position: relative ;
+         color: grey;
+         font-size: 50px;
+         font-weight: bold
+       
+       }
+       .top-left {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        }
+        p {
+            width: 100%;
+            font-size: larger;
+          }
+
+          .download-resume {
+            padding: 10px; 
+          }
+          
+          .contactme {
+              display: none;
+            padding: 10px;
+          }
+}
