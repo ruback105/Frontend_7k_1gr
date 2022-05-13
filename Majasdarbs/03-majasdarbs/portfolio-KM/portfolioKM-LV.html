@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="lv">
 <head>
-    <title>Kristīna Mežapuķe Vides speciāliste/Frontend developer</title>
     <meta name="description" content="Kristīna Mežapuķe | Vides speciāliste/Frontend developer">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Kristīnas portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#darba-pieredze">Darba pieredze</li>
-                <li><a href="#izglitiba">Izglītība</li>
-                <li><a href="#kursi">Kursi</li>  
-                <li><a href="#iemanas">Iemaņas</li>
-                <li><a href="#valodu-prasme">Valodu prasme</li>
-                <li><a href="#kontakti">Sazināties ar mani</li>
-            </ul>
-        </nav>
-    </header>
+    <section id="header">
+        <div class="header container">
+                <div class="nav-bar">
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="#darba-pieredze">Darba pieredze</a></li>
+                        <li><a href="#izglitiba">Izglītība</a></li>
+                        <li><a href="#kursi">Kursi</a></li>  
+                        <li><a href="#iemanas">Iemaņas</a></li>
+                        <li><a href="#valodu-prasme">Valodu prasme</a></li>
+                        <li><a href="#kontakti">Sazināties ar mani</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </section>
 
     <main>
         <!-- ABOUT ME -->
         <section id="aboutme">
+            <div class="aboutme container">
+            <img src="foto.png" alt="profileImg" width="100px" height="100px"> 
             <address>
                 <h1>Kristīna Mežapuķe | Vides speciāliste/Frontend developer</h1>
                 <a href="tel.:+37126544789">+371 26544789</a><br>
                 <a href="mailto:k_mezapuke@yahoo.com">k_mezapuke@yahoo.com</a><br>
                 <a href="#kontakti">Sazināties ar mani</a>
             </address>
+            </div>
         </section>
         <!-- /ABOUT ME -->
 
         <hr>
         <!-- Darba pieredze-->
         <section id="darba-pieredze">
+            <div class="darba-pieredze container">
             <h2>Darba pieredze</h2>
 
             <h3>AS "VentEko", vides inženiere</h3>
@@ -117,32 +126,38 @@
             <ul>
                 <li>Dažādi vides projekti atkritumu saimniecības jomā (t.sk.kompostēšanas)</li>
             </ul>
+            </div>
         </section>
         <!-- /Darba pieredze-->
 
         <hr>
         <!-- Izglitiba-->
         <section id="izglitiba">
+            <div class="izglitiba container">
             <h2>Izglītība</h2>
             <p>Latvijas Lauksaimniecības universitāte, Lauku inženieru fakultāte, Doktora studijas (temats – bioloģiski sadalāmo atkritumu kompostēšanas paņēmieni
                 Latvijā) <em>2005.-2010.</em></p>
             <p>Rīgas Tehniskā universitāte, Enerģētikas un elektrotehnikas fakultāte, Maģistra grāds (vides zinātnes programma) <em>2003.-2005.</em></p>
             <p>Rīgas Tehniskā universitāte, Enerģētikas un elektrotehnikas fakultāte, Vides inženiera bakalaura grāds <em>2000.-2003.</em></p>
+            </div>
         </section>
         <!-- /Izglitiba-->
 
         <hr>
         <!-- Kursi-->
         <section id="kursi">
+            <div class="kursi container">
             <h2>Kursi</h2>
             <p>Latvijas Universitātes Vadības un uzņēmējdarbības mācību centrs: Front-end mājas lapas izstrādē <em>2022.gada aprīlis - jūnijs</em></p>
-            <p>Profesionālās izglītības kompetences centrs „Rīgas Valsts tehnikums”: Rasēšanas AutoCAD programmā <em>2018.gada janvāris - marts</em></p>
+            <p>Profesionālās izglītības kompetences centrs Rīgas Valsts tehnikums: Rasēšanas AutoCAD programmā <em>2018.gada janvāris - marts</em></p>
+            </div>
         </section>
         <!-- /Kursi-->
 
         <hr>
         <!--iemanas-->
         <section id="iemanas">
+            <div class="iemanas container">
             <h2>Iemaņas</h2>
             <p>B kategorijas braukšanas tiesības</p>
             <b>Frontend izstrādē lietoju sekojošas valodas:</b>
@@ -150,24 +165,28 @@
                 <li>HTML5</li>
                 <li>CSS3</li>
             </ul>
+            </div>
         </section>
         <!--/iemanas-->
 
         <hr>
         <!--valodu-prasme-->
         <section id="valodu-prasme">
+            <div class="valodu-prasme container">
             <h2>Valodu prasme</h2>
             <ul>
                 <li>Krievu (dzimtā)</li>
                 <li>Latviešu (brīvi)</li>
                 <li>Angļu (profesionāli)</li>
             </ul>
+            </div>
         </section>
         <!--/valodu-prasme-->
 
         <hr>
         <!--kontakti-->
         <section id="kontakti">
+            <div class="kontakti container">
             <h2>Sazināties ar mani</h2>
             
             <form action="action_page.php">
@@ -182,7 +201,8 @@
 
                 <input type="submit" value="Sūtīt">
             </form>
-        </section>
+        
+            </div></section>
        <!--/kontakti-->
     </main>
 </body>
