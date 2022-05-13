@@ -1,3 +1,9 @@
+
+body {
+    background-color: #dcdcdc;
+    background-image: url("../smallCloud.svg");
+}
+
 main,
 footer,
 header {
@@ -20,7 +26,6 @@ main {
 footer {
     background-color: #dcdcdc;
     padding: 10px 0;
-
 }
 
 section {
@@ -118,4 +123,45 @@ address a {
     font-style: normal;
     text-decoration: none;
     color: rgb(142, 36, 142);
+}
+
+/* Mobile size 720px */
+
+@media screen and (max-width: 720px) {
+    body {
+      background-image: none;
+      background-color: black;
+    }
+
+    header {
+        position: relative;
+    }
+
+    main {
+        padding-top: 0px;
+    }
+
+    nav {
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    nav ul li:not(:last-child) {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    footer nav ul li a {
+        color: white;
+    }
 }
