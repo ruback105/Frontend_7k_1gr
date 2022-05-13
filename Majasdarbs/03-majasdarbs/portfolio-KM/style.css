@@ -3,18 +3,6 @@ body {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,223,196,1) 20%, rgba(0,212,255,1) 100%);
 }
 
-,selected-lang{
-  cursor: pointer;
-  }
-
-.selected-lang:before {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-image: url(https://countryflagsapi.com/png/latvia);
-}
-
 .container {
   width: 100%;
   max-width: 1000px;
