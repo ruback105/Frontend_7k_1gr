@@ -66,7 +66,18 @@ const array = [1, 2, 3, "test", 4, NaN, 5, false];
 const numberArray = [];
 
 // create funciton to validate if is number
+const checkIfNumber = (elem) => {
+  if (typeof elem === "number" && !isNaN(elem)) {
+    return elem;
+  }
+  return null;
+};
 
-array.forEach((arrayElem) => {});
+array.forEach((arrayElem) => {
+  const elem = checkIfNumber(arrayElem);
+  if (elem) {
+    numberArray.push(elem);
+  }
+});
 
 console.log(numberArray); // [1,2,3,4,5]
