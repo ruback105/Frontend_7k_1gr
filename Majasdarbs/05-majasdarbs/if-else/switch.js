@@ -18,6 +18,5 @@ switch (darbaDiena) {
         return "Error";
 }
 };
-
 console.log(getDay ("Piektdiena"))
 
