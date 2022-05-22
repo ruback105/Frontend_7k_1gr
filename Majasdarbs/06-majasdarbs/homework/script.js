@@ -3,7 +3,7 @@ const characters = ["a", "b", "c", "d", "e"];
 let arrayId;
 let promptMessage;
 
-let output = document.getElementById("output");
+let output = document.getElementById("main");
 
 const printValues = (elem) => {
   elem.innerText = characters[arrayId];
@@ -26,7 +26,7 @@ const getValue = (message = null) => {
 getValue();
 
 document.addEventListener("keypress", (e) => {
-  if (e.key === output.innerText) {
+  if (e.key === arrayId) {
     alert("PAREIZI");
     getValue();
   } else {
