@@ -3,7 +3,7 @@ const characters = ["a", "b", "c", "d", "e"];
 let arrayId;
 let promptMessage;
 
-let outputs = document.getElementById("output");
+let output = document.getElementById("output");
 
 const printValues = (elem) => {
   elem.innerText = characters[arrayId];
@@ -11,13 +11,15 @@ const printValues = (elem) => {
 
 const getValue = (message = null) => {
   arrayId = prompt(
-    message ?? `Ievadiet skaitli no 0 līdz ${characters.length}:`
+    message ?? `Ievadiet skaitli no 0 līdz ${characters.length - 1}:`
   );
   if (arrayId >= 0 && arrayId <= characters.length - 1 && !isNaN(arrayId)) {
     printValues(output);
     return;
   }
-  promptMessage = `Skaitlis ${arrayId} netbilst ${characters.length}:`;
+  promptMessage = `Skaitlis ${arrayId} netbilst intervālam no 0 līdz ${
+    characters.length - 1
+  }:`;
   getValue(promptMessage);
 };
 
