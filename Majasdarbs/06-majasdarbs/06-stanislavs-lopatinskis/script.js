@@ -30,7 +30,7 @@ elem.innerText = characters[arrayId];
   getValue();
 
 document.addEventListener("keypress", (e) => {
-    if (e.key === output.innerText) {
+    if(e.key === characters[arrayId]) {
       alert("PAREIZI!");
       getValue();
     } else {
