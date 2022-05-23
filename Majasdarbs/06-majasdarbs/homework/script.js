@@ -27,17 +27,22 @@ const letters = [
   "z",
 ];
 let arrayId = prompt("Please enter your number");
+// console.log(boolean(arrayId));
+// console.log(arrayId.length);
 let output = document.getElementById("main");
 function printValue() {
   output.innerHTML = letters[arrayId];
 }
-function getValue() {
-  if (arrayId >= 0 && arrayId <= 25) {
+// arrayId == null
+function getValue() {     
+          if (arrayId >= 0 && arrayId <= 25 && arrayId) {
     printValue();
-  } else {
-    alert("NEPAREIZI");
-  }
-}
+  } 
+//   else if (arrayId == null || arrayId.length == 0) {
+//           alert("Enter valid value");
+   else {
+          alert("Enter valid value");
+  }};
 getValue() /
   document.addEventListener("keypress", function onEvent(event) {
     if (event.key === letters[arrayId]) {
