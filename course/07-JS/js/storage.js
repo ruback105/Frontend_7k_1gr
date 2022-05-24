@@ -40,23 +40,50 @@
 // hobbyElement.innerText = hobbyFromLocalStorage;
 
 /* JSON local storage values */
-const currentUser = localStorage.getItem("current_user");
+// const currentUser = localStorage.getItem("current_user");
 
-if (currentUser) {
-  const meFromJson = JSON.parse(currentUser);
+// if (currentUser) {
+//   const meFromJson = JSON.parse(currentUser);
 
-  Object.keys(meFromJson).forEach((key) => {
-    const selectedElement = document.querySelector(`p#${key} > span`);
-    selectedElement.innerText = meFromJson[key];
-  });
-} else {
-  const me = {
-    username: "user_name",
-    email: "email@gmail.com",
-    hobby: "sports",
-  };
+//   Object.keys(meFromJson).forEach((key) => {
+//     const selectedElement = document.querySelector(`p#${key} > span`);
+//     selectedElement.innerText = meFromJson[key];
+//   });
+// } else {
+//   const me = {
+//     username: "user_name",
+//     email: "email@gmail.com",
+//     hobby: "sports",
+//   };
 
-  localStorage.setItem("current_user", JSON.stringify(me));
-}
+//   localStorage.setItem("current_user", JSON.stringify(me));
+// }
 
 /* GET/SET data in local storage functions  */
+const setData = (key, value) => {
+  localStorage.setItem(key, value);
+};
+
+const getData = (key, fallbackValue) => {
+  let value = localStorage.getItem(key);
+
+  if (!value) {
+    setData(key, fallbackValue);
+    getData(key);
+  }
+
+  return value;
+};
+
+const object = {
+  username: "user_name",
+  email: "email@gmail.com",
+  hobby: "sports",
+};
+
+const me = JSON.parse(getData("current_user", JSON.stringify(object)));
+
+Object.keys(me).forEach((key) => {
+  const selectedElement = document.querySelector(`p#${key} > span`);
+  selectedElement.innerText = me[key];
+});

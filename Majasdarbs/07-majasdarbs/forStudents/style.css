@@ -1,4 +1,8 @@
 .done {
-    color: red;
-    text-decoration: line-through;
+  color: red;
+  text-decoration: line-through;
+}
+
+.taskAdder {
+  margin-top: 20px;
 }

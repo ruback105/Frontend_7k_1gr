@@ -37,29 +37,56 @@
                 funkcija toogleDone dara divas darbibas
                 gadijuma ja bija nospiesta izdžešanas poga, mes izdesam elementu no localStorage izsaucam renderTask funkciju lai atjaunto sarakstu
                 gadijuma ja bija nospiest elements mes nomainam elementam done vertibu done: false --> done: true un izsaucam renderTask funkciju lai atjauno sarakstu
-*/          
-const taskAdder = document.querySelector('.taskAdder');
-const myTasks   = document.querySelector('.myTasks');
-const tasks     = JSON.parse(localStorage.getItem('taskList')) || [];
-
-// addEventListener click 
+*/
+// addEventListener click
 // addEventListener submit
 
+const taskListElement = document.getElementById("task-list");
+const addButton = document.getElementById("add-button");
+const inputField = document.getElementById("input");
 
+const taskList = JSON.parse(localStorage.getItem("task_list")) || [];
+
+const saveToLocalStorage = (key, value) => {
+  localStorage.setItem(key, JSON.stringify(value));
+};
+
+const renderTask = () => {
+  const taskListElementArray = taskList.map(
+    (task) => `<li class="${task.done ? "done" : null}">${task.value}</li>`
+  );
+  taskListElement.innerHTML = taskListElementArray.join("");
+};
+
+const toggleDone = (e) => {
+
+};
+
+addButton.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  const inputValue = inputField.value;
+
+  taskList.push({ value: inputValue, done: false });
+  saveToLocalStorage("task_list", taskList);
+
+  inputField.value = "";
+
+  renderTask();
+});
+
+taskListElement.addEventListener("click", (e) => {
+  const clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target);
+
+  if (taskList[clickedLiIndex].done) {
+    taskList[clickedLiIndex].done = false;
+  } else {
+    taskList[clickedLiIndex].done = true;
+  }
+
+  saveToLocalStorage("task_list", taskList);
+
+  renderTask();
+});
 
 renderTask();
-
-function addTask(){
-
-}
-
-function saveToLocalStorage() {
-
-}
-
-function renderTask() {
-
-}
-
-function toggleDone(e) {
-}
