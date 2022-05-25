@@ -51,14 +51,26 @@ const saveToLocalStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
 
-const addTask = (e) => {
-  e.preventDefault();
-  const inputValue = inputField.value;
-  taskList.push({ value: inputValue, done: false });
-  saveToLocalStorage("task_list", taskList);
-  inputField.value = "";
-  renderTask();
+const isInTaskList = (elem) => {
+  for (let i = 0; i < taskList.length; i++) {
+    if (taskList[i].value === elem) {
+      return true;
+    }
+  }
+  return false;
 }
+
+const isValidInput = (input) => {
+  if (input === null || input.trim().length === 0) {
+    alert("Task name can not be empty!");
+    return false;
+  }
+  if (isInTaskList(input.trim())) {
+    alert("Task already exists!");
+    return false;
+  }
+  return true;
+};
 
 const renderTask = () => {
   const taskListElementArray = taskList.map(
@@ -68,6 +80,18 @@ const renderTask = () => {
       }<span class="remove">❌</span></li>`
   );
   taskListElement.innerHTML = taskListElementArray.join("");
+};
+
+const addTask = (e) => {
+  e.preventDefault();
+  if (!isValidInput(inputField.value)) {
+    return;
+  }
+  const inputValue = inputField.value.trim();
+  taskList.push({ value: inputValue, done: false });
+  saveToLocalStorage("task_list", taskList);
+  inputField.value = "";
+  renderTask();
 };
 
 const toggleDone = (e) => {
