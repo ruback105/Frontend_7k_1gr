@@ -61,11 +61,12 @@ const isInTaskList = (elem) => {
 }
 
 const isValidInput = (input) => {
-  if (input === null || input.trim().length === 0) {
-    alert("Task name can not be empty!");
-    return false;
-  }
-  if (isInTaskList(input.trim())) {
+  // Below block is actual if field is not with attribute "required" in HTML
+  // if (input === null || input.length === 0) {
+  //   alert("Task name can not be empty!");
+  //   return false;
+  // }
+  if (isInTaskList(input)) {
     alert("Task already exists!");
     return false;
   }
@@ -73,9 +74,10 @@ const isValidInput = (input) => {
 };
 
 const renderTask = () => {
+  let counter = 0;
   const taskListElementArray = taskList.map(
     (task) =>
-      `<li class="${task.done ? "done" : null}">${
+      `<li data-id="${counter++}" class="${task.done ? "done" : null}">${
         task.value
       }<span class="remove">❌</span></li>`
   );
@@ -83,8 +85,12 @@ const renderTask = () => {
 };
 
 const addTask = (e) => {
+  if (!inputField.validity.valid) {
+    // Stop code execution if HTML "required" validation failed
+    return;
+  }
   e.preventDefault();
-  if (!isValidInput(inputField.value)) {
+  if (!isValidInput(inputField.value.trim())) {
     return;
   }
   const inputValue = inputField.value.trim();
@@ -95,18 +101,19 @@ const addTask = (e) => {
 };
 
 const toggleDone = (e) => {
+  if (e === null) {
+    return;
+  }
   let clickedLiIndex;
   if (e.srcElement.localName === "li") {
     // Complete done toggle
-    clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target);
-    if (taskList[clickedLiIndex].done) {
-      taskList[clickedLiIndex].done = false;
-    } else {
-      taskList[clickedLiIndex].done = true;
-    }
+    // clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target); // another way to get index if "data-id" attribute doesn't exist
+    clickedLiIndex = e.target.getAttribute("data-id");
+    taskList[clickedLiIndex].done = !taskList[clickedLiIndex].done;
   } else {
     // Complete task removing
-    clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target.parentElement);
+    // clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target.parentElement); // another way to get index if "data-id" attribute doesn't exist
+    clickedLiIndex = e.target.parentElement.getAttribute("data-id");
     taskList.splice(clickedLiIndex, 1);
   }
   saveToLocalStorage("task_list", taskList);

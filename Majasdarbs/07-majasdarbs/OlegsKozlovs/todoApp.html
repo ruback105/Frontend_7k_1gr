@@ -7,7 +7,7 @@
   <body>
     <div class="container">
       <form class="taskAdder">
-        <input type="text" name="task" placeholder="New Task Item" id="input" />
+        <input type="text" name="task" placeholder="New Task Item" id="input" required pattern=".*\S+.*" />
         <input type="submit" value="➕ Add" id="add-button" />
       </form>
 
