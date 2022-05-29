@@ -47,11 +47,11 @@ const toggleDone = (e) => {
 
   if (e.srcElement.localName === "li") {
     
-    taskList[clickedLiIndex].done = !taskList[clickedLiIndex].done; // set reverse state value to task list item, that was clicked
+    taskList[clickedLiIndex].done = !taskList[clickedLiIndex].done;
   
-    saveToLocalStorage("task_list", taskList); // save new list inside the local storage
+    saveToLocalStorage("task_list", taskList); 
   
-    renderList(); // re-render html list
+    renderList();
   } else {
     clickedLiIndex = e.target.parentElement.getAttribute("data-id");
     taskList.splice(clickedLiIndex, 1);
