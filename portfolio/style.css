@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .navbar {
   display: flex;
   justify-content: center;
@@ -26,7 +28,7 @@
   text-decoration: none;
   color: white;
   padding: 8px 25px;
-  transition: all 1s ease;
+  transition: all .2s ease;
 }
 .navbar ul li a:hover {
   background-color: white;
@@ -37,13 +39,11 @@
 /* Home */
 #home {
   display: flex;
+  flex-direction:column;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 840px;
+  height: 880px;
   color: white;
-  align-items: center;
-
-  
-
+ justify-content: center;
 }
 #home::before {
   content: "";
@@ -51,13 +51,13 @@
   top: 0;
   right: 0;
   background: url("nauris-home1.jpg") no-repeat center center/cover;
-  height: 900px;
+  height: 940px;
   width: 100%;
   z-index: -1;
-  opacity: 1;
 }
 .main{
     display:flex;
+    flex-direction:column;
     position: absolute;
     top:40%;
     left: 10%
@@ -66,16 +66,36 @@
     font-size: 3rem;
     font-family: century;
     text-align: left;
-    margin: 40px 50px;
+    margin: 40px 80px;
+}
+.btn {
+  padding: 20px 35px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  position: absolute;
+  top:60%;
+  left: 4%;
+  transition: .6s ease;
+}
+.btn:hover{
+  border: white;
+  cursor: pointer;
+  background-color:white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+
 }
 
 
 /* about me */
-.heading-about-me {
+.nav-text {
     font-size: 3rem;
     font-family: century;
     text-align: center;
-    margin: 10px 10px;
+    margin: 50px 10px;
 }
 #about{
     display: flex;
@@ -96,14 +116,145 @@
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
+    padding: 70px;
 }
 #intro h2{
-    font-size: 3rem;
-    margin-left: 20px;
+    font-size: 2rem;
+    margin-left: 0px;
     margin-top: 40px;
     margin-bottom: 30px;
 }
 .about-me-text{
     font-size: 1.2rem;
+}
+
+/* Portfolio */
+
+#portfolio{
+  display: flex;
+  flex-direction:column;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  align-items: center;
+  padding: 20px;
+
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.gallery img{
+  width: 360px;
+  height: 240px;
+  margin:10px;
+  }
+
+  /* services */
+
+  #services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 450 px;
+
+    align-items: left;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450 px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(to top, black 50%, white 50% );
+    background-size: 100% 200%;
+    transition: all .8s;
+  }
+
+  .box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 25px black; 
+  }
+
+  /* contact */
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+
+  }
+  .form{
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+
+  }
+
+  .input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+
+  }
+  #msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border:none;
+    outline:none;
+  }
+  #send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline:none;
+  }
+
+  #send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10 white;
+  }
+  .fa {
+  
+    font-size: 20px;
+    width: 60px;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    transition: all .2s ease;
+ }
+
+.fa:hover {
+    opacity: 0.2;
 }

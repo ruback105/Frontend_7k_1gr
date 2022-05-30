@@ -3,35 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nauris Kostjuks</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <a href="https://www.facebook.com/nauris.kostjuks" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/NaurisKostjuks/?fbclid=IwAR3mSghphBGPeg4BB7_BDrepVsYbuG44s5jF2adKx_kFRTARnz4FN6eo218" class="fa fa-instagram"></a>
       </ul>
     </nav>
     <section id="home">
-        <div class="main">
-            <h1 class="headings">I AM <br><span class="input"></span> </h1>
-        </div>
-        
+        <div class="">
+          <div class="box1">
+            <h1 class="headings">I AM<span class="input"></span> </h1>
+            <a href="#contact" target="_parent">
+        <button class="btn">
+          Contact me
+      </button> 
+    </a>
+    </div>
     </section>
     <section id="about">
-        <h1 class="heading-about-me">ABOUT ME</h1>
+        <h1 class="nav-text">ABOUT ME</h1>
         <div id="pic">
             <img src="about-me.jpg" alt="">
             <div id="intro">
                 <h2>Nauris Kostjuks</h2>
-                <p class="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum reprehenderit assumenda ex consequuntur optio quibusdam nobis ratione necessitatibus quis. Quae debitis modi animi illo nobis natus id atque accusantium, placeat dolore harum blanditiis sunt esse laboriosam quasi ipsa autem! Aliquid qui voluptatibus molestiae numquam necessitatibus alias ducimus error quod itaque. Saepe corporis, praesentium et ullam ipsa ratione tempora aliquam dolorem optio aliquid at iste repellat dignissimos illo cupiditate dolore dolor accusamus porro sunt. Suscipit reiciendis possimus delectus nobis ullam debitis inventore quos, eius culpa aliquam magnam ex quia ipsa excepturi saepe rerum repellat, numquam perferendis? Fugit totam porro saepe quis!</iusto></p>
+                <p class="about-me-text">I'm Front-End Developer located in Latvia.<br>
+                Well-organized person, problem solver, independent employee with high attention in detail.<br>
+                Fan of BMX freestyle, outdoor activities, gym, heavy music, TV series and literature.<br>
+                Interested in the entire frontend spectrum and working on ambitious projects with positive people.<br><br>
+                Let's make something special together!!!</p>
             </div>
         </div>
 
+    </section>
+    <section id="portfolio">
+      <h1 class="nav-text"> PORTFOLIO</h1>
+      <div class="gallery">
+        <img src="img1.jpg" alt="">
+        <img src="img1.jpg" alt="">
+        <img src="img1.jpg" alt="">
+        <img src="img1.jpg" alt="">
+        <img src="img1.jpg" alt="">
+        <img src="img1.jpg" alt="">
+      </div>
+    </section>
+    <section id="services">
+      <h1 class="nav-text">SERVICES</h1>
+      <div class="row">
+        <div class="box">
+          <h1 class="nav-text">Website <br> Design</h1>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nihil dolor dolorum laudantium doloremque itaque, 
+            ipsam nisi adipisci, enim asperiores voluptatem illum incidunt minus numquam eaque voluptatibus quas dolore ex.</p>
+        </div>
+        <div class="box">
+          <h1 class="nav-text">UX/UI <br> Design</h1>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nihil dolor dolorum laudantium doloremque itaque, 
+            ipsam nisi adipisci, enim asperiores voluptatem illum incidunt minus numquam eaque voluptatibus quas dolore ex.</p>
+        </div>
+        <div class="box">
+          <h1 class="nav-text">Digital <br> marketing</h1>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nihil dolor dolorum laudantium doloremque itaque, 
+            ipsam nisi adipisci, enim asperiores voluptatem illum incidunt minus numquam eaque voluptatibus quas dolore ex.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="nav-text">CONTACT</h1>
+      <form action="" class="form">
+        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <input type="email" name="email" class="input" placeholder="Enter Your Email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="SEND" id="send">
+      </form>
+     
+      
     </section>
     
     <script type="text/javascript" src="js/script.js"></script>
@@ -44,6 +98,7 @@
             loop: true,
         });
     </script>
+  </div>
 
   </body>
 </html>
