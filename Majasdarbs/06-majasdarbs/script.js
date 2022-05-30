@@ -26,7 +26,7 @@ const getValue = (message = null) => {
 getValue();
 
 document.addEventListener("keypress", (e) => {
-  if (e.key === arrayId) {
+  if (e.key === characters[arrayId]) {
     alert("Pareizi!");
     getValue();
   } else {
