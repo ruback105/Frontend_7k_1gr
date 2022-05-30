@@ -37,10 +37,8 @@
 /* Home */
 #home {
   display: flex;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
   height: 840px;
-  justify-content: center;
   color: white;
   align-items: center;
 
@@ -59,12 +57,10 @@
   opacity: 1;
 }
 .main{
-    display:inline;
-    align-items: left;
+    display:flex;
     position: absolute;
     top:40%;
-    left:15%
-
+    left: 10%
 }
 .headings{
     font-size: 3rem;
