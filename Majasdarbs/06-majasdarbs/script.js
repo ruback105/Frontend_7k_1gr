@@ -1,4 +1,4 @@
-const characters = ["a", "b", "c", "d", "e"];
+const characters = ["a", "b", "c", "d", "e", "f", "g"];
 
 let arrayId;
 let promptMessage;
