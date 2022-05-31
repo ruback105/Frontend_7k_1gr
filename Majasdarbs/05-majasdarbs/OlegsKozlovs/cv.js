@@ -1,4 +1,4 @@
-const VardsUzvards = {
+const OlegsKozlovs = {
     firstName: "Oļegs",
     lastName: "Kozlovs",
     role: "Software developer",
