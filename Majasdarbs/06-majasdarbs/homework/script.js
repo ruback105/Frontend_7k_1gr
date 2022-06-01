@@ -37,3 +37,41 @@
         ja gadijuma izvadit paziņojumu alert('PAREIZI') un izsaukt funkciju getValue() vel reizi
         ne gadijum izvadit paziņojumu alert('NEPAREIZI')
 */      
+const characters = ["a", "b", "c", "d", "a", "c", "r", "h", "r", "t" ];
+
+let arrayId;
+
+let promptMessage;
+
+let output = document.getElementById("main");
+
+
+
+const printValues = (element) => {
+        element.innerHtml = characters[arrayId];
+};
+
+
+let getValue = (message = null) => {
+        arrayId = Number(prompt(message ?? 'ievadiet skaitli no 0 līdz 10 }'));
+        if (arrayId >= 0 && arrayId <= characters.length - 1 && !isNaN(arrayId)) {
+                printValues(output);
+                return;
+        } 
+        promptMessage = ("Ievadiet skaitli vēlreiz"); 
+        getValue (promptMessage);   
+};
+       
+        
+
+document.addEventListener("keypress", (e) => {
+        if(e.key === characters[arrayId]) {
+          alert("PAREIZI!");
+          getValue();
+        } else {
+          alert("NEPAREIZI!");
+        }
+      });
+
+
+

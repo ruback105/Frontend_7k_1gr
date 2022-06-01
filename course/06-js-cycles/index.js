@@ -32,19 +32,21 @@
 
 // console.log(newEmail);
 
-// let array = ["a", "b", "c", "d", "a", "c", "r", "a", "h", "r", "t", "a"];
-// let aRepeat = 0;
+let array = ["a", "b", "c", "d", "a", "c", "r", "a", "h", "r", "t", "a"];
+let aRepeat = 0;
 
 // for (let i = 0; i < array.length; i++) {
-//   if (array[i] === "a") {
-//     aRepeat += 1;
-//   }
-// }
+//     if  (array [i] === "a") {
+//         aRepeat +=1;
+//     }
 
-// array.forEach((elem) => {
-//   if (elem === "a") {
-//     aRepeat += 1;
-//   }
-// });
+// };
 
-// console.log(aRepeat); // = 4
+array.forEach ((element) => {
+    if (element === "a") {
+        aRepeat += 1;
+    }
+    
+});
+
+console.log(aRepeat); // = 4

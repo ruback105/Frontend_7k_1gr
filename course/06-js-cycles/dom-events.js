@@ -22,9 +22,9 @@
 // });
 
 // query selector (return first matching element)
-const queryParagraph = document.querySelector(".test.paragraph");
+// const queryParagraph = document.querySelector(".test.paragraph");
 
-console.log(queryParagraph.classList);
+// console.log(queryParagraph.classList);
 
 // query selector all (return matching elements array)
 // const queryParagraph = document.querySelectorAll(".test.paragraph");
