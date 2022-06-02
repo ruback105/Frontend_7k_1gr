@@ -10,6 +10,7 @@
             <input 
                 type="text" 
                 id="text" 
+                required
             />
         </div>
       
@@ -18,7 +19,11 @@
             <input 
                 type="email" 
                 id="email"
-                title="Epasta laukam jasatur @ un domena vardam jabut gmail.com"  
+                title="Lūdzu ievadiet Gmail epastu, kas beidzas ar @gmail.com"  
+                pattern="[^@]+@gmail\.com"
+                oninvalid="this.setCustomValidity('Lūdzu ievadiet Gmail epastu, kas beidzas ar @gmail.com')"  
+                oninput="setCustomValidity('')"
+                required 
             />
         </div>
 
@@ -27,7 +32,12 @@
             <input 
                 type="text" 
                 id="minmaxlength" 
-                title="Teksta lauka garums ir no 5 lidz 10 simboliem')"  
+                title="Teksta lauka garumam ir jābūt no 5 līdz 10 simboliem')"  
+                minlength="5"
+                maxlength="10"
+                oninvalid="this.setCustomValidity('Teksta lauka garumam ir jābūt no 5 līdz 10 simboliem')"  
+                oninput="setCustomValidity('')"
+                required 
             />
         </div>
       
@@ -38,6 +48,7 @@
                 id="password" 
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                 oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"  
+                oninput="this.setCustomValidity('')"
                 required
             />
         </div>
@@ -47,33 +58,42 @@
             <input 
                 type="password" 
                 id="passwordcombined" 
+                minlength="8"
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
-                title="Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars un" 
+                title="Jāsatur vismaz 8 sumboli: 1 lielais burts, 1 mazais burts un 1 cipars" 
+                oninvalid="this.setCustomValidity('Jāsatur vismaz 8 sumboli: 1 lielais burts, 1 mazais burts un 1 cipars')"
+                oninput="this.setCustomValidity('')"
                 required
             />
         </div>
 
         <div>
-            <label for="passwordcombined">Parole (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <label for="camp-week">Nedēļa</label>
             <input 
                 type="week" 
                 name="week" 
                 id="camp-week"
                 min="2022-W18" 
                 max="2022-W26" 
+                title="Jāsatur nedēļas robežas vērtības no 2022. gada 18. nedēļas līdz 2022. gada 26. nedēļai" 
+                oninvalid="this.setCustomValidity('Jāsatur nedēļas robežas vērtības no 2022. gada 18. nedēļas līdz 2022. gada 26. nedēļai')"
+                oninput="this.setCustomValidity('')" 
                 required
             />
         </div>
 
         <div>
-            <label for="appt">Choose a time for your meeting:</label>
+            <label for="appt">Tikšanās laiks</label>
 
             <input 
                 type="time" 
                 id="time" 
                 name="time"
                 min="09:00" 
-                max="18:00" 
+                max="18:00"
+                title="Lūdzu ievadiet laiku no 9:00 līdz 18:00" 
+                oninvalid="this.setCustomValidity('Lūdzu ievadiet laiku no 9:00 līdz 18:00')"
+                oninput="this.setCustomValidity('')"  
                 required
             />
         </div>
@@ -81,11 +101,18 @@
         </hr>
 
         <div>
-            <label for="ZIP">ZIP : </label>
-            <input type="text" id="ZIP">
-            <label for="Country">Valsts : </label>
-            <select id="Country">
+            <label for="ZIP">ZIP kods: </label>
+            <input type="text" 
+            id="ZIP"
+            title="Lūdzu ievadiet valsts ZIP kodu" 
+            required>
+
+         <label for="country">Valsts : </label>
+            <select id="country">
               <option value="lv">Latvia</option>
+              <option value="ee">Igaunija</option>
+              <option value="ua">Ukraina</option>
+              <option value="fr">Francija</option>
             </select>
         </div>
 

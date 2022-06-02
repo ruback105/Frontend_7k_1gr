@@ -5,6 +5,18 @@ function checkZIP() {
       "^(LV-)?\\d{4}$",
       "Latvias ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
     ],
+    ee: [
+      "^(EE-)?\\d{4}$",
+      "Igaunijas ZIPs jabut 4 simboliem un jasakas ar EE-: e.g. EE-2001 or 2007",
+    ],
+    ua: [
+      "^(UA-)?\\d{4}$",
+      "Ukrainas ZIPs jabut 4 simboliem un jasakas ar UA-: e.g. UA-4001 or 4007",
+    ],
+    fr: [
+      "^(FR-)?\\d{4}$",
+      "Francijas ZIPs jabut 4 simboliem un jasakas ar FR-: e.g. FR-5001 or 5007",
+    ],
     // for example if we will have ee (Estonia) we can add similar validation (shouldn't be real, just a mock one)
     // "^(EE-)?\\d{4}$",
     // "Estonias ZIPs jabut 4 simboliem un jasakas ar EE-: e.g. EE-3001 or 3007",
@@ -33,17 +45,19 @@ function checkZIP() {
 function printValues() {
   var matches = [];
   var inputs = document.getElementsByTagName("input");
-
-  for (var key in inputs) {
-    var value = inputs[key].value;
-    matches.push(value);
+    
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].id === "submit") {
+      continue;
+    }
+    matches.push(inputs[i].value);    
   }
 
   alert(matches);
 }
 
 window.onload = function () {
-  document.getElementById("Country").onchange = checkZIP;
-  document.getElementById("ZIP").oninput = checkZIP;
+  document.getElementById("country").onchange = checkZIP;
+  document.getElementById("zip").oninput = checkZIP;
   document.getElementById("form").addEventListener("submit", printValues);
 };
