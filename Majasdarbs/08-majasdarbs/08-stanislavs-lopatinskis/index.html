@@ -32,7 +32,7 @@
             <input 
                 type="text" 
                 id="minmaxlength" 
-                title="Teksta lauka garumam ir jābūt no 5 līdz 10 simboliem')"  
+                title="Teksta lauka garumam ir jābūt no 5 līdz 10 simboliem"  
                 minlength="5"
                 maxlength="10"
                 oninvalid="this.setCustomValidity('Teksta lauka garumam ir jābūt no 5 līdz 10 simboliem')"  
@@ -47,6 +47,7 @@
                 type="password" 
                 id="password" 
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                title="Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars"
                 oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"  
                 oninput="this.setCustomValidity('')"
                 required
