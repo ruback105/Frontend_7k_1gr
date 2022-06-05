@@ -5,6 +5,18 @@ function checkZIP() {
       "^(LV-)?\\d{4}$",
       "Latvias ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
     ],
+    lt: [
+      "^(Lt-)?\\d{4}$",
+      "Lietuvas ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
+    ],
+    ee: [
+      "^(EE-)?\\d{4}$",
+      "Igaunijas ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
+    ],
+    fr: [
+      "^(Fr-)?\\d{4}$",
+      "Francijas ZIPs jabut 4 simboliem un jasakas ar LV-: e.g. LV-3001 or 3007",
+    ],
     // for example if we will have ee (Estonia) we can add similar validation (shouldn't be real, just a mock one)
     // "^(EE-)?\\d{4}$",
     // "Estonias ZIPs jabut 4 simboliem un jasakas ar EE-: e.g. EE-3001 or 3007",
@@ -31,12 +43,14 @@ function checkZIP() {
 }
 
 function printValues() {
-  var matches = [];
-  var inputs = document.getElementsByTagName("input");
+  let matches = [];
+  let inputs = document.getElementsByTagName("input");
 
-  for (var key in inputs) {
-    var value = inputs[key].value;
-    matches.push(value);
+  for (let i = 0; i < inputs.length; i++) {
+    let value = inputs[i].value;
+    if (value !== "") {
+      matches.push(value);
+    }
   }
 
   alert(matches);
