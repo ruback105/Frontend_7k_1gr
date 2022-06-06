@@ -20,23 +20,42 @@
 //   const user = await fetch(href)
 //     .then((res) => res.json())
 //     .then((data) => data.results);
-
-//   console.log(user);
 // };
 
 // fetchUser();
 
-// const fetchUsers = async () => {
-//   // https://jsonplaceholder.typicode.com/ - fetch users api
-//   const users = await fetch("https://jsonplaceholder.typicode.com/users").then(
-//     (res) => res.json()
-//   );
+const renderUserList = (userList) => {
+  const userSection = document.querySelector("section.results");
 
-//   console.log(users);
-// };
+  userList.forEach((user) => {
+    const cardWrapper = document.createElement("div");
+    cardWrapper.classList.add("user", "wrapper");
 
-// fetchUsers();
+    console.log(user);
+    cardWrapper.innerHTML = `
+    <img src="${user.picture.large}"></img>
+    <p>${user.name.first} ${user.name.last}</p>
+    <div class="user-content">
+    <p>Email: <span>${user.email}</span></p>
+    <p>Gender: <span>${user.gender}</span></p>
+    <p>Phone: <span>${user.phone}</span></p>
+    </div>
+    `;
 
-// fetch 100 results
-// gb and us
-// male
+    userSection.append(cardWrapper);
+  });
+};
+
+const onLoad = async () => {
+  const { search } = window.location;
+
+  if (search) {
+    const userList = await fetch(`https://randomuser.me/api/${search}`)
+      .then((res) => res.json())
+      .then((data) => data.results);
+
+    renderUserList(userList);
+  }
+};
+
+onLoad();

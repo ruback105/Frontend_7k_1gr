@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <form action="">
+        <div>
+          <label for="gender">Select gender: </label>
+          <select name="gender" id="">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="nationality">Select nationality: </label>
+          <select name="nationality" id="">
+            <option value="gb" selected>GB</option>
+            <option value="us">US</option>
+            <option value="au">AU</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="results">Fetch count: </label>
+          <input type="number" name="results" min="1" max="5000" value="1" />
+        </div>
+
+        <button type="submit">Search</button>
+      </form>
+
+      <section class="results"></section>
+    </div>
     <script src="./js/app.js"></script>
   </body>
 </html>
