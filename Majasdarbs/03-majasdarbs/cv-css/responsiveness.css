@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1636px) {
+    main {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 826px) {
+    main {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    header nav > ul {
+        display: none;
+    }
+    
+    main {
+        padding-top: 0;
+    }
+
+    #aboutme {
+        padding-top: 50px;
+    }
