@@ -1,8 +1,10 @@
 body {
-    background-color: lightgrey;
+    background-color: rgb(209, 110, 110);
 }
 
 .content {
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
