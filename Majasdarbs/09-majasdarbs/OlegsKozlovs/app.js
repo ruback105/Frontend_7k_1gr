@@ -67,10 +67,10 @@ const renderDogData = (data) => {
 
 // Image fetching
 
-const getDogImg = async () => {
+const getDogImg = () => {
     const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
 
-    await fetch(url) 
+    fetch(url) 
     .then(response => response.json()) 
     .then(data => renderDogData(data))
  	.catch(error => alert(error)); 
