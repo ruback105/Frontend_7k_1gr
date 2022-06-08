@@ -47,17 +47,26 @@ let dogSelector = document.getElementById('dogSelector');
 
 const dogSelector = document.getElementById("dogSelector");
 const dogImg = document.getElementById("dogImg");
+const dogName = document.getElementById("dogName");
 const renderDogData = (data) => {
+  if (!data) {
+    return;
+  }
   if (data.message) {
+    //Why here needs to be passed data.message?
     dogImg.innerHTML = `<img src="${data.message}"></img>`;
     return;
   }
   data.forEach((breed) => {
     //with every loop create html option element
     const option = document.createElement("option");
+    //what is the proper way to display selected dog in header?
+    const header = document.createElement("h1");
+    header.innerHTML = `${breed.name}`;
     option.value = `${breed.value}`;
     option.innerHTML = `${breed.name}`;
     dogSelector.appendChild(option);
+    dogName.appendChild(header);
   });
 };
 
