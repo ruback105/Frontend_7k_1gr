@@ -15,6 +15,9 @@
             `<option value=${breed.value}>${breed.name}</option>`
         - izsaucam musu funkciju un rezultata mes saņemis visas iespejamas suņu šķirnes
 
+        
+let dogSelector = document.getElementById('dogSelector');
+
 
 
 
@@ -42,3 +45,34 @@
         - izmantojot innerHTML pievienot img tag ar src=${data.message}
 */
 
+const dogSelector = document.getElementById("dogSelector");
+const dogImg = document.getElementById("dogImg");
+const renderDogData = (data) => {
+  if (data.message) {
+    dogImg.innerHTML = `<img src="${data.message}"></img>`;
+    return;
+  }
+  data.forEach((breed) => {
+    //with every loop create html option element
+    const option = document.createElement("option");
+    option.value = `${breed.value}`;
+    option.innerHTML = `${breed.name}`;
+    dogSelector.appendChild(option);
+  });
+};
+
+//fetch image
+const getDogImg = () => {
+  const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
+
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => renderDogData(data))
+    .catch((error) => alert(error));
+};
+
+renderDogData(data);
+getDogImg();
+
+//Event listener
+dogSelector.addEventListener("change", getDogImg);
