@@ -1,0 +1,10 @@
+@media only screen and (max-width:400px) {
+    body {
+    background-image: url(../images/background_small.jpg)
+    }
+    @media (max-width: 400px) {
+        .sales-points {
+          display: flex;
+          justify-content: space-between;
+        }
+      } 
