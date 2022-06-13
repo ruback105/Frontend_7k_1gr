@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="form"> 
+        <div>
+            <label for="text">Teksta lauks</label>
+            <input 
+                type="text" 
+                id="text" 
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="text">Epasts lauks</label>
+            <input 
+                type="email" 
+                id="email"
+                title="Epasta laukam jasatur @ un domena vardam jabut gmail.com" 
+                pattern="[^@]+@gmail\.com"
+                required 
+            />
+        </div>
+
+        <div>
+            <label for="minmaxlength">Teksta lauks ar Min un Max garumu</label>
+            <input 
+                type="text" 
+                id="minmaxlength" 
+                title="Teksta lauka garums ir no 5 lidz 10 simboliem"  
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="password">Parole (jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="password"  
+                title="Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
+            />
+        </div>
+            
+         <div>
+            <label for="passwordcombined">Parole (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <input 
+                type="password" 
+                id="passwordcombined" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+                minlength="8"
+                title="Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars" 
+                required
+            />
+        </div>
+        <div>
+            <label for="week ">Nedeļa</label>
+            <input type="week"
+            id="week"
+            min="2022-W18" 
+            max="2022-W26"
+            title="Jāsatur nedēļas kura vērtības no 2022-W18 līdz 2022-W26" />
+        </div>
+
+        <div>
+            <label for="time">Time:</label>
+             <input 
+                type="time" 
+                id="time" 
+                name="time"
+                min="09:00" 
+                max="18:00" 
+                title="Jāsatur laika robežas vērtības no 09:00 līdz 18:00"
+                required
+                 />    
+        </div>
+
+        <div>
+            <label for="ZIP">ZIP : </label>
+            <input 
+                type="text"
+                id="ZIP"
+                title="Jāsatur valsts ZIP kodu"
+                required
+                />
+            </div>
+            <div>
+                <label for="Country">Valsts : </label>
+                <select id="Country">
+                    <option value="lv">Latvia</option>
+                    <option value="lt">Lithuania</option>
+                    <option value="ee">Estonia</option>
+                </select>
+            </div>
+
+           
+        
+
+        <input id="submit" type="submit" class="button" value="Parbaudit">
+      </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
