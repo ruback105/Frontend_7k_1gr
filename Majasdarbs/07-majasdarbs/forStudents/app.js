@@ -38,64 +38,59 @@
                 gadijuma ja bija nospiesta izdžešanas poga, mes izdesam elementu no localStorage izsaucam renderTask funkciju lai atjaunto sarakstu
                 gadijuma ja bija nospiest elements mes nomainam elementam done vertibu done: false --> done: true un izsaucam renderTask funkciju lai atjauno sarakstu
 */
-// selected elements
+
+
 const taskListElement = document.getElementById("task-list");
 const addButton = document.getElementById("add-button");
 const inputField = document.getElementById("input");
 
 const taskList = JSON.parse(localStorage.getItem("task_list")) || []; // get data from local storage or create empty array
 
-/*
-  Function, that sets value inside local storage
-  key if the name, which will be assigned to the value inside the local storage, so you can get it by this name
-  value should be stringified before push, because we might want to store object type (array/object)
-*/
 const saveToLocalStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
 
-/*
-  Function, that renders list
-  It should render item value itself
-  In case if task is done, class should be rendered
-  TODO: you can add data-index='${idx}' to each li element, to use querySelector for selecting specific element by it index.
-*/
 const renderTask = () => {
   const taskListElementArray = taskList.map(
-    (task, idx) => `<li class="${task.done ? "done" : null}">${task.value}</li>`
+    (task) => 
+    `<li class="${task.done ? "done" : null}">${
+      task.value}
+      <span class="remove">❌</span></li>`
   );
   taskListElement.innerHTML = taskListElementArray.join("");
 };
 
-/*
-  Function that removed element from list or toggle done. 
-  If you wan't to use, as it is specified in descripton, you need to refactor current code and add done state here
-*/
-const toggleDone = (e) => {};
+const toggleDone = (e) => {
 
-// triggers, when add button is clicked
+  let clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target); 
+  if (e.srcElement.localName === "li") {
+
+    taskList[clickedLiIndex].done = !taskList[clickedLiIndex].done;
+    console.log(clickedLiIndex)
+    saveToLocalStorage("task_list", taskList);
+    renderTask();
+
+  } else {
+     
+    clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target.parentElement);
+    taskList.splice(clickedLiIndex, 1);
+  }
+  saveToLocalStorage("task_list", taskList);
+  renderTask();
+};
+
 addButton.addEventListener("click", (e) => {
-  e.preventDefault(); // prevent default behaviour of submit buttons (page refresh)
+  e.preventDefault(); 
 
-  const inputValue = inputField.value; // get input value from the field
+  const inputValue = inputField.value; 
 
-  taskList.push({ value: inputValue, done: false }); // push new input value inside task list
-  saveToLocalStorage("task_list", taskList); // save new task list inside the local storage
+  taskList.push({ value: inputValue, done: false }); 
+  saveToLocalStorage("task_list", taskList); 
 
-  inputField.value = ""; // reset input field value
-
-  renderTask(); // re-render html list
+  inputField.value = ""; 
+  renderTask(); 
 });
 
-// triggers when something inside of the list is clicked
-taskListElement.addEventListener("click", (e) => {
-  const clickedLiIndex = Array.from(taskListElement.children).indexOf(e.target); // get li index, that was clicked
+taskListElement.addEventListener("click", toggleDone);
 
-  taskList[clickedLiIndex].done = !taskList[clickedLiIndex].done; // set reverse state value to task list item, that was clicked
-
-  saveToLocalStorage("task_list", taskList); // save new list inside the local storage
-
-  renderTask(); // re-render html list
-});
-
-renderTask(); // initial htmt list render
+renderTask(); 
