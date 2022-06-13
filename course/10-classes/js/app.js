@@ -62,17 +62,17 @@
 //   console.log(me.getInfo());
 // });
 
-class Vehicle {
-  constructor(name, model) {
-    this.name = name;
-    this.model = model;
-  }
+// class Vehicle {
+//   constructor(name, model) {
+//     this.name = name;
+//     this.model = model;
+//   }
 
-  getInfo() {
-    return `My car ir ${this.name} ${this.model}`;
-  }
-}
+//   getInfo() {
+//     return `My car ir ${this.name} ${this.model}`;
+//   }
+// }
 
-const myCar = new Vehicle("audi", "a5");
+// const myCar = new Vehicle("audi", "a5");
 
-console.log(myCar.getInfo());
+// console.log(myCar.getInfo());
