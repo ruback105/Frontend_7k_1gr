@@ -1,8 +1,0 @@
-circle {
-    fill: blue;
-}
-
-circle:hover {
-    fill: pink;
-    stroke: none;
-}

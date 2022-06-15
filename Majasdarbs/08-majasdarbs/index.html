@@ -9,7 +9,8 @@
             <label for="text">Teksta lauks</label>
             <input 
                 type="text" 
-                id="text" 
+                id="text"
+                required 
             />
         </div>
       
@@ -18,7 +19,10 @@
             <input 
                 type="email" 
                 id="email"
-                title="Epasta laukam jasatur @ un domena vardam jabut gmail.com"  
+                pattern=".+@gmail\.com"
+                oninvalid="this.setCustomValidity('laukam jasatur @ un domena vardam jabut gmail.com')"
+                oninput="setCustomValidity('')"
+                required
             />
         </div>
 
@@ -27,7 +31,12 @@
             <input 
                 type="text" 
                 id="minmaxlength" 
-                title="Teksta lauka garums ir no 5 lidz 10 simboliem')"  
+                title="Teksta lauka garums ir no 5 lidz 10 simboliem"  
+                required
+                minlength="5"
+                maxlength="10"
+                oninvalid="this.setCustomValidity('Teksta lauka garums ir no 5 lidz 10 simboliem')"
+                oninput="setCustomValidity('')"
             />
         </div>
       
@@ -37,7 +46,8 @@
                 type="password" 
                 id="password" 
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"  
+                oninvalid="this.setCustomValidity('Jāsatur vismaz 1 lielais burts, 1 mazais burts un 1 cipars')"
+                oninput="setCustomValidity('')"    
                 required
             />
         </div>
@@ -48,13 +58,16 @@
                 type="password" 
                 id="passwordcombined" 
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
-                title="Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars un" 
+                title="Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars" 
+                minlength="8"
+                oninvalid="this.setCustomValidity('Jāsatur vismaz 8 sumboli 1 lielais burts, 1 mazais burts un 1 cipars')"
+                oninput="setCustomValidity('')"
                 required
             />
         </div>
 
         <div>
-            <label for="passwordcombined">Parole (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
+            <label for="camp-week">Parole (jāsatur vismaz 8 simboli 1 lielais burts, 1 mazais burts un 1 cipars)</label>
             <input 
                 type="week" 
                 name="week" 
@@ -62,6 +75,9 @@
                 min="2022-W18" 
                 max="2022-W26" 
                 required
+                title="Jāsatur nedēļas robežas vērtības no 2022-W18 līdz 2022-W26"
+                oninvalid="this.setCustomValidity('Jāsatur nedēlas robežas vērtības no 2022-W18 līdz 2022-W26')"
+                oninput="setCustomValidity('')"  
             />
         </div>
 
@@ -74,6 +90,9 @@
                 name="time"
                 min="09:00" 
                 max="18:00" 
+                title="Jāsatur laika robežas vērtības no 09:00 līdz 18:00"
+                oninvalid="this.setCustomValidity('Jāsatur laika robežas vērtības no 09:00 līdz 18:00')"
+                oninput="setCustomValidity('')"  
                 required
             />
         </div>
@@ -86,6 +105,9 @@
             <label for="Country">Valsts : </label>
             <select id="Country">
               <option value="lv">Latvia</option>
+              <option value="lt">Lithuania</option>
+              <option value="ee">Estonia</option>
+              <option value="fr">Spain</option>
             </select>
         </div>
 
