@@ -10,8 +10,8 @@
 
         Implementacija: 
         - Izvejdosim mainigo dogSelector kura saglabasim musu <select> element var izmantot elementa id 'dogSelector' un getElementById() metodi
-        - izveidosiem funkciju renderDogData(data) kura saņems siņa šķirnes datus 
-        - izmantojot cilku forEach() izesiem cauri musu datiem un pieinosim musu dogSelector ar innerHTML metodi nepiecišamo html
+        - izveidosiem funkciju renderDogData(data) kura saņems suņa šķirnes datus 
+        - izmantojot ciklu forEach() izesiem cauri musu datiem un pievienosim musu dogSelector ar innerHTML metodi nepiecišamo html
             `<option value=${breed.value}>${breed.name}</option>`
         - izsaucam musu funkciju un rezultata mes saņemis visas iespejamas suņu šķirnes
 
@@ -42,3 +42,31 @@
         - izmantojot innerHTML pievienot img tag ar src=${data.message}
 */
 
+const dogSelector = document.getElementById("dogSelector");
+const dogImg = document.getElementById("dogImg");
+const renderDogData = (data) => {
+    if (Array.isArray(data)) {
+        data.forEach((breed) => {
+            const option = document.createElement("option");
+            option.setAttribute("value", breed.value);
+            option.innerHTML = `${breed.name}`;
+            dogSelector.appendChild(option);
+        });
+    }
+    dogImg.innerHTML = `<img src="${data.message}">`;
+}
+
+const getDogImg = async () => {
+    const url = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
+
+    await fetch(url) 
+    .then(response => response.json()) 
+    .then(data => renderDogData(data))
+ 	.catch(error => alert(error));
+
+}
+
+renderDogData(data);
+getDogImg();
+
+dogSelector.addEventListener("change", getDogImg);
