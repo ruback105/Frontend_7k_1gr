@@ -63,7 +63,17 @@
 // });
 
 class Vehicle {
-  constructor() {}
+  constructor(make, model, year, engine) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.engine = engine;
+  }
 
-  getInfo() {}
+  getInfo() {
+    return `I own a ${this.make} ${this.model} made in ${this.year} with a ${this.engine} engine.`
+  }
 }
+
+const myCar = new Vehicle("Volvo", "740", 1992, "2.3l")
+console.log(myCar.getInfo()); 
