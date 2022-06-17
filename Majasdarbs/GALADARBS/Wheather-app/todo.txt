@@ -1,0 +1,3 @@
+Izveidot laika prognoze aplikaciju 
+
+var izmantot bezmaksas api https://open-meteo.com/en
