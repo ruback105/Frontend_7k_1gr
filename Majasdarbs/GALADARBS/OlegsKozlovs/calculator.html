@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./img/calculatorIcon.ico" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <head>
+      <div class="header">
+        <img src="./img/calculatorHeader.ico" alt="logo" loading="lazy" />
+        <h1>Calculator</h1>
+      </div>
+    </head>
+    <main>
+      <section>
+        <div id="display">
+          <input type="text" value="0" readonly/>
+        </div>
+      </section>
+      <section>
+        <div id="memory">
+            <button type="button" value="memstore" title="Save to memory">MS</button>
+            <button type="button" value="memplus" title="Add to value in memory">M+</button>
+            <button type="button" value="memminus" title="Subtract from value in memory">M-</button>
+            <button type="button" value="memdisplay" title="Show memory value">M</button>
+            <button type="button" value="memclear" title="Clear memory">MC</button>
+        </div>
+        <div id="undo">
+            <button type="button" value="undo" title="Undo"><img src="./img/undo.ico" height="20px" width="20px"/></button>
+        </div>
+      </section>
+      <section>
+        <div id="digits">
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <br>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <br>
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <br>
+            <button type="button" value="invert">+/-</button>
+            <button type="button" value="0">0</button>
+            <button type="button" value="point">.</button>
+        </div>
+        <div id="actions">
+            <button type="button" value="back" title="Backspace">BCK</button>
+            <button type="button" value="clear" title="Clear screen">CLR</button>
+            <br>
+            <button type="button" value="plus">+</button>
+            <button type="button" value="minus">-</button>
+            <br>
+            <button type="button" value="multiply">*</button>
+            <button type="button" value="divide">/</button>
+            <br>
+            <button type="button" value="equals">=</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
