@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen w-screen">
+    <header
+      class="
+        h-[60px]
+        w-screen
+        bg-slate-300
+        fixed
+        top-0
+        left-0
+        flex
+        items-center
+        px-4
+        space-x-2
+      "
+    >
+      <img src="../assets/logo.svg" alt="" class="h-10 w-10" />
+      <p class="text-lg font-bold text-red-700">
+        Drink<span class="text-yellow-500">A</span>Beer
+      </p>
+    </header>
+    <section class="h-screen w-full">
+      <div class="pt-[60px] border border-black mx-6 flex flex-col p-4">
+        <button
+          class="
+            get-beer
+            ml-auto
+            py-2
+            px-4
+            font-semibold
+            border-2 border-yellow-500
+            rounded-md
+            mt-4
+          "
+        >
+          Get Random
+        </button>
+
+        <div
+          id="card-container"
+          class="
+            w-full
+            mt-4
+            flex flex-col
+            items-center
+            md:flex-row md:flex-wrap md:justify-center md:items-start
+            gap-4
+          "
+        ></div>
+      </div>
+    </section>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
