@@ -1,0 +1,78 @@
+  body {
+    background: #51d0da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    font-weight: 500;
+    }
+
+  .card {
+    background: #f9fafa;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    max-width: fit-content;
+    margin: 1em;
+    }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+  button[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  background: #505327;
+  color: white;
+  font-size: 15px;
+  border: 1px;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+  }  
+
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+  
+  input.search-bar {
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-radius: 20px;
+  }
+
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.6em;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: auto;
+  }
+  
