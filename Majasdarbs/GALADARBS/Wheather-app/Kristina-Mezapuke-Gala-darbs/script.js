@@ -16,13 +16,13 @@ let weather = {
     const { description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    document.querySelector(".city").innerText = "Laika apstākļi " + name;
+    document.querySelector(".city").innerText = "Laika apstākļi" + name;
     document.querySelector(".description").innerText = description;
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
-      "Wind speed: " + speed + " km/h";
+      "Wind speed: " + speed + " m/s";
     document.querySelector(".weather").classList.remove("loading");
     },
   search: function () {
