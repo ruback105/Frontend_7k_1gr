@@ -62,8 +62,4 @@
 //   console.log(me.getInfo());
 // });
 
-class Vehicle {
-  constructor() {}
 
-  getInfo() {}
-}
