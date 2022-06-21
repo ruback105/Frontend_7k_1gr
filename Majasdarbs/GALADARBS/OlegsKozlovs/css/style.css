@@ -34,7 +34,7 @@ button {
     background-color: #e0d5d5;
 }
 
-button[value="equals"], button[value="undo"]  {
+button[value="equals"] {
     width: 108px;
 }
 

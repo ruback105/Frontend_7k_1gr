@@ -29,8 +29,9 @@
             <button type="button" value="memdisplay" title="Show memory value">M</button>
             <button type="button" value="memclear" title="Clear memory">MC</button>
         </div>
-        <div id="undo">
-            <button type="button" value="undo" title="Undo"><img src="./img/undo.ico" height="20px" width="20px"/></button>
+        <div id="historyButtons">
+            <button type="button" value="histdisplay" title="Show history">H</button>
+            <button type="button" value="histclear" title="Clear history">HC</button>
         </div>
       </section>
       <section>
@@ -55,17 +56,22 @@
             <button type="button" value="back" title="Backspace">BCK</button>
             <button type="button" value="clear" title="Clear screen">CLR</button>
             <br>
-            <button type="button" value="plus">+</button>
-            <button type="button" value="minus">-</button>
+            <button type="button" value="+">+</button>
+            <button type="button" value="-">-</button>
             <br>
-            <button type="button" value="multiply">*</button>
-            <button type="button" value="divide">/</button>
+            <button type="button" value="*">*</button>
+            <button type="button" value="/">/</button>
             <br>
             <button type="button" value="equals">=</button>
         </div>
       </section>
+      <section>
+        <div id="historyRecords"></div>
+      </section>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="./js/operation.js"></script>
+    <script src="./js/memory.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
