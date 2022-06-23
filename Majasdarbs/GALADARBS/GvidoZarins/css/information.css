@@ -1,0 +1,62 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.city-council {
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    margin: 0 25px;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    margin: 25px 15px 25px 15px;
+}
+
+.council-img {
+    width: 50%;
+    float: left;
+}
+
+.council-info {
+    width: 40%;
+    float: right;
+    overflow: hidden;
+    margin: 25px 15px 25px 0;
+}
+
+.council-info p {
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.about-auce {
+    display: block;
+    text-align: left;
+    margin: 25px 15px 25px 15px;
+    
+}
+
+.about-auce p {
+    margin: 0 25px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.about-auce h2 {
+    margin: 0 25px;
+}

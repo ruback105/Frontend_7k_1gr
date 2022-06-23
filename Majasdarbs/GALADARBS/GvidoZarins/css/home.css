@@ -1,0 +1,22 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.basic-info {
+    display: block;
+    text-align: center;
+}
+
+.img-responsive {
+    width: 80%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.basic-info p {
+    font-size: 1.5rem;
+    margin: 15px 15px 25px 15px;
+}

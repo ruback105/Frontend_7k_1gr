@@ -1,0 +1,40 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section p {
+    font-size: 1.3rem;
+    margin: 15px 25px 15px 25px;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    margin: 35px 0 0px 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+form label {
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+textarea, form input {
+    font-size: 1.3rem;
+}
+
+#btn {
+    margin-top: 15px;
+    width: 50%;
+    cursor: pointer;
+}
+

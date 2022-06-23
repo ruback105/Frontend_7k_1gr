@@ -1,0 +1,81 @@
+@media screen and (max-width: 576px) {
+    /* Frame responsive */
+    body {
+        font-size: 10px;
+    }
+    
+    .header-container {
+        height: 0px;
+        width: 100vw;
+    }
+    
+    .header-container > p {
+       visibility: hidden;
+    }
+    
+    .nav-links {
+        font-size: 10px;
+        margin: 0 3px 0 3px;
+    }
+    
+    .footer-container {
+        height: 100px;
+    }
+    
+    .adress, .city-contacts, .author {
+        font-size: 10px;
+    }
+    
+    .footer-container a {
+        font-size: 10px;
+    }
+
+    /*  text responsive size for all pages */
+    .basic-info p {
+        font-size: 10px;
+    }
+
+    section p {
+        font-size: 10px;
+    }
+    
+    section h2 {
+        font-size: 12px;
+    }
+    
+    form label {
+        font-size: 12px;
+    }
+    
+    textarea, form input {
+        font-size: 12px;
+    }
+    
+    .council-info p {
+        font-size: 10px;
+    }
+    
+    h2 {
+        font-size: 12px;
+    }
+    
+    h3 {
+        font-size: 12px;
+    }
+    
+    .about-auce p {
+        font-size: 10px;
+    }
+
+    /* Change <div> in information page to column type */
+    .council-img {
+        width: 100%;
+    }
+    
+    .council-info {
+        width: 100%;
+        float: left;
+        margin-left: 15px;
+    }
+    
+}

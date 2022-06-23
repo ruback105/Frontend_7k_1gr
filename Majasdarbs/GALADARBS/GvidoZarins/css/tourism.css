@@ -1,0 +1,28 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.img-responsive {
+    width: 50%;
+    height: auto;
+    margin: 25px;
+}
+
+.small-img-responsive {
+    height: auto;
+    width: 20%;
+    margin: 25px;
+}
+
+section p {
+    font-size: 1.3rem;
+    margin: 15px 25px 15px 25px;
+    text-align: justify;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    margin: 35px 0 0px 25px;
+}
