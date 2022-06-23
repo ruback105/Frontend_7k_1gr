@@ -1,0 +1,80 @@
+body{
+    background-image: url('assets/img/default-background.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h3{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #546269;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 117px;
+    color: #546269;
+    margin: 0;
+}
+h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #242b2e;
+    margin: 20px;
+}
+.content-card{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-width: 500px;
+    min-width: 400px;
+}
+input{
+    outline: none;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #54626941;
+    border-style: solid;
+    border-width: 2px 0px 2px 2px;
+    border-color: #546269;
+    height: 40px;
+    text-indent: 10px;
+    font-size: 1.3em;
+    color: white;
+}
+input::placeholder{
+    color:#414c52;
+}
+#search-button{
+    background-color: black;
+    outline: none;
+    background-color: #54626941;
+    border-style: solid;
+    border-color: #546269;
+    border-radius: 0px 20px 20px 0px;
+    padding: 0px 10px;
+}
+#search{
+    display: flex;
+}
+#current-desc{
+    margin-top: 0;
+}
