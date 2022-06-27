@@ -9,20 +9,24 @@
         
 </head>
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" class="search-bar" placeholder="Search">
-            <button type="submit"></button>
-        </div>
-        <div class="weather loading">
-            <h2 class="city">Laika apstākļi Rīgā</h2>
-            <h1 class="temp">18°</h1>
-            <div class="flex">
-                <div class="description">Cloudy</div>
-            </div>
-            <div class="humidity">Humidity: 75%</div>
-            <div class="wind">Wind speed: 2 m/s</div>
-        </div>
+    <div class="container-fluid">
+        <section class="main"> 
+            <section class="inputs">
+                <input type="text" placeholder="Ievadiet jebkuru pilsētu..." id="cityinput">
+                <input type="submit" value="Submit" id="add">
+                <button placeholder="submit" id="add"></button>
+            </section>
+
+            <section class="display">
+                <div class="wrapper">
+                    <h2 id="cityoutput"></h2>
+                    <p id="description"></p>
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+                </div>
+            </section>
+        </section>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>

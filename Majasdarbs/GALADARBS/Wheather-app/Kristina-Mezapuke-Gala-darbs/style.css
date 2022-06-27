@@ -1,78 +1,86 @@
-  body {
-    background: #51d0da;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    margin: 0;
-    font-weight: 500;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #51d0da;
+}
 
-  .card {
-    background: #f9fafa;
-    padding: 1em;
-    border-radius: 10px;
-    width: 100%;
-    max-width: fit-content;
-    margin: 1em;
-    }
+.container-fluid{
+width: 500px;
+margin: 50px auto;
+padding: 15px;
+border-radius: 10px;
+}
 
-  .search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+.inputs {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  justify-content: center;
+  background: rgb(233, 209, 209);
+}
 
-  button[type="submit"] {
-  width: 20%;
+.inputs input[type="text"] {
+  height: 2.5rem;
+  width: 15rem;
+  background: #b6abab;
+  font-weight: bold;
+  font-size: 1rem;
   padding: 10px;
-  background: #505327;
-  color: white;
-  font-size: 15px;
-  border: 1px;
-  border-radius: 50%;
-  height: 2em;
-  width: 2em;
-  cursor: pointer;
-  }  
-
-  button[type="submit"]:hover {
-    opacity: 1;
-  }
-  
-  input.search-bar {
   border: none;
-  outline: none;
-  padding: 1em;
-  border-radius: 20px;
-  }
+  background-color: transparent;
+  border: 2px solid #917777;
+  border-radius: 8px;
+  margin-right:5px ;
+}
 
-  h1.temp {
-    margin: 0;
-    margin-bottom: 0.6em;
-  }
+.inputs input[type="submit"] {
+  height: 2.5rem;
+  width: 5rem;
+  background: #c9db22;
+  font-weight: bold;
+  color: rgb(8, 8, 8);
+  font-size: 1rem;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
 
-  .flex {
-    display: flex;
-    align-items: center;
-  }
+.display {
+  text-align: center;
+  width: 500px;
+  color: #bcd81d;
+}
 
-  .description {
-    text-transform: capitalize;
-    margin-left: 8px;
-  }
+.wrapper {
+  margin: 0 10rem;
+  background-color: rgb(190, 173, 173);
+  height: 50vh;
+  margin: 50px auto;
+  border-radius: 10px;
+}
 
-  .weather.loading {
-    visibility: hidden;
-    max-height: 20px;
-    position: relative;
-  }
-
-  .weather.loading:after {
-    visibility: visible;
-    content: "Loading...";
-    position: absolute;
-    top: 0;
-    left: auto;
+.wrapper h2{
+  padding: 15px 0;
+  text-align: center;
+  background: #25b8cc;
+  color: rgb(219, 199, 199);
   }
   
+.wrapper p{
+  margin:15px 50px;
+  margin-right: 15px;
+  text-align: left;
+  color: #1e6ee6;
+  font-size:15px;
+}
+
+.wrapper h2 span{
+  font-size: 25px;
+  color: #51b0be;
+}
+  .wrapper p span{
+  color: #28c028;
+  font-size: 25px;
+}
