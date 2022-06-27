@@ -21,11 +21,11 @@ function convertion(val){
 
             const nameval = data['name']
             const descrip = data['weather']['0']['description']
-            const tempature = data['main']['temp']
+            const temperature = data['main']['temp']
             const wndspd = data['wind']['speed']
 
             city.innerHTML=`Laika apstākļi -  <span>${nameval}<span>`
-            temp.innerHTML = `Temperatūra: <span>${ convertion(tempature)} °C</span>`
+            temp.innerHTML = `Temperatūra: <span>${ convertion(temperature)} °C</span>`
             description.innerHTML = `Laikapstākļi: <span>${descrip}<span>`
             wind.innerHTML = `Vēja ātrums: <span>${wndspd} km/h<span>`
 
