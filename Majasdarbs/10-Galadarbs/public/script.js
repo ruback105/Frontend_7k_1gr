@@ -39,13 +39,10 @@ function renderData(data) {
   <p class="sm:text-2xl text-xl"><i class="fa-solid fa-location-dot">&ensp;</i>${
     data.name
   }</p>
-
-  <img class="sm:w-56 w-40" src='icons/${weather.iconId}.png' />
-  
+  <img class="sm:w-56 w-40" src='icons/${weather.iconId}.png' /> 
   <p class="sm:text-6xl text-4xl">${Math.round(data.main.temp - KELVIN)}°C</p>
   <p class="text-2xl">${data.weather[0].description}</p>
   <p>${now}</p>
- 
   <img class="w-full" src="img/clouds.png" />
   `;
 }
