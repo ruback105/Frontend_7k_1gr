@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Fira+Code:wght@300;400&family=League+Gothic&family=Montserrat+Alternates:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500&family=Saira+Condensed&family=Source+Code+Pro:wght@300&family=Updock&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.gradient {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(13.1px);
+}
