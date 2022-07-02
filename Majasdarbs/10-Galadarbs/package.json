@@ -1,0 +1,15 @@
+{
+  "name": "checkifsimilar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwind build -i src/styles.css -o public/styles.css --watch",
+    "watch": "watch \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
