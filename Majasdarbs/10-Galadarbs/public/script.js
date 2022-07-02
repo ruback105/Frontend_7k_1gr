@@ -1,15 +1,16 @@
 //const userInput = document.getElementById("cityinput").value;
 //const userInput = document.querySelector("#cityinput");
 
-const userInput = "Riga";
+let userInput = "Riga";
 const KELVIN = 273;
 //const key = process.env.API_KEY;
 const key = "3045dd712ffe6e702e3245525ac7fa38";
 
-function getInputFromTextBox() {
-  let input = document.getElementById("cityinput").value;
-  console.log(input);
+function searchCity() {
+  userInput = document.getElementById("cityinput").value;
+  start();
 }
+
 //Get weather from API provider
 async function start() {
   try {
@@ -46,3 +47,5 @@ function renderData(data) {
   <img class="w-full" src="img/clouds.png" />
   `;
 }
+
+document.getElementById("submit").addEventListener("click", searchCity);
