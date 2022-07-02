@@ -1,6 +1,6 @@
 let data = [
     {
-      'value': 'affenpinscher',
+     'value': 'affenpinscher',
       'name': 'affenpinscher'
     },
     {
